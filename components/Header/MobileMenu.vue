@@ -21,14 +21,14 @@
         </v-list-item>
         <v-divider class="divider-sidebar" />
         <v-list-item
-          v-for="item in ['login', 'register']"
+          
           :key="item"
           :href="link.movie[item]"
           :style="{ animationDuration: navMenu.length * 0.15 + 's' }"
           link
         >
           <v-list-item-title class="menu-list">
-            {{ $t('movieLanding.header_'+item) }}
+          
           </v-list-item-title>
         </v-list-item>
       </v-list>

@@ -1,0 +1,145 @@
+@mixin overlay {
+  position: absolute;
+  width: 100%;
+  height: 100% !important;
+  display: flex;
+  padding: 40px !important;
+  top: 0;
+  left: 0;
+  font-size: 28px;
+};
+
+.root {
+  :deep( > div) {
+    position: relative;
+    @include breakpoints-up(sm) {
+      display: flex
+    }
+  }
+  :deep(.v-btn__content) {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.grid-25 {
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+  @include breakpoints-up(sm) {
+    border-radius: 36px;
+    width: 31%;
+    margin: 0 1%;
+  }
+  @include breakpoints-up(lg) {
+    width: 23%;
+    margin: 0 1%;
+  }
+  @include breakpoints-up(lg) {
+    height: 350px
+  }
+  &:hover {
+    img {
+      transform: translateX(0px) !important
+    }
+  }
+  img {
+    transition: all 0.3s;
+    min-height: 100%;
+    width: calc(100% + 20px);
+    .v-locale--is-rtl & {
+      transform: translateX(10px);
+    }
+    .v-locale--is-ltr & {
+      transform: translateX(-10px);
+    }
+  }
+  .overlay {
+    @include overlay;
+    @include breakpoints-down('xs') {
+      border-radius: 0;
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0.5;
+      background-image: linear-gradient(-44deg, $palette-primary-main 6%, $palette-secondary-main 100%);
+    }
+  }
+  h5 {
+    text-transform: uppercase;
+    position: absolute;
+    text-align: center;
+    bottom: 50px;
+    width: 100%;
+    left: 0;
+    color: $palette-common-white;
+    font-weight: $font-bold;
+    padding: $spacing5;
+    white-space: normal;
+  }
+}
+.grid-50 {
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+  background: $palette-secondary-main;
+  @include breakpoints-up(sm) {
+    border-radius: 36px;
+    width: 33%
+  }
+  @include breakpoints-up(md) {
+    width: 50%
+  }
+  @include breakpoints-up(lg) {
+    width: 50%;
+    height: 350px;
+  }
+  &:hover {
+    img {
+      transform: scale(1.1)
+    }
+  }
+  img {
+    transition: all 0.3s;
+    height: 100%;
+    min-width: 100%;
+    opacity: 0.45;
+  }
+  .overlay {
+    background-image: linear-gradient(270deg, rgba(0, 0, 0, 0.64), transparent);
+    @include breakpoints-down('xs') {
+      border-radius: 0;
+    }
+    :deep(.v-btn__content) {
+      align-items: flex-end;
+      justify-content: center;
+      flex-direction: column;
+      padding: $spacing5;
+      @include breakpoints-down(sm) {
+        align-items: center;
+      }
+    }
+    @include overlay
+  }
+  h3 {
+    color: $palette-common-white;
+    font-weight: $font-bold;
+    font-size: 1.7em;
+    line-height: 48px;
+    i {
+      @include margin-right($spacing2)
+    }
+    span {
+      text-transform: none;
+      display: block;
+      letter-spacing: 1.6px
+    }
+  }
+}

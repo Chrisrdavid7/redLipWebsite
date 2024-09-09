@@ -1,0 +1,52 @@
+.title-main {
+  margin-top: -100px;
+  font-weight: $font-bold;
+  margin-bottom: 45px;
+  min-width: 200px;
+  font-size: 36px;
+  line-height: 48px;
+
+  @include breakpoints-up(md) {
+    display: flex; // Use flexbox to align titles in a row
+    justify-content: space-between; // Add space between the two titles
+    align-items: center; // Vertically center both titles
+  }
+
+  @include breakpoints-down(md) {
+    display: block; // Stack titles vertically on smaller screens
+    text-align: center;
+  }
+
+  h4 {
+    font-size: 6.28rem;
+    @include breakpoints-down(md) {
+      font-size: 32px;
+      line-height: 48px;
+    }
+    @include breakpoints-down(xs) {
+      font-size: 24px;
+      line-height: 36px;
+    }
+  }
+
+  @include breakpoints-down(xs) {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.primary-title {
+  font-weight: $font-bold;
+  color: #B77C36;
+  display: inline-block; // Keep primary title inline
+}
+
+.secondary-title {
+  padding-top: 0; // Remove padding when they are side by side
+  font-weight: $font-bold;
+  color: #976CB6;
+  display: inline-block; // Keep secondary title inline
+  margin-left: 20px; // Add space between primary and secondary titles
+}
+

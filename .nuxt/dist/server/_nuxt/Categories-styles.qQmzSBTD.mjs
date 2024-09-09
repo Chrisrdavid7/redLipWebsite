@@ -1,0 +1,3 @@
+import style_0 from './Categories-styles-1.mjs-BRz6NKtP.js';
+import style_1 from './Categories-styles-1.mjs-BRz6NKtP.js';
+export default [style_0, style_1]

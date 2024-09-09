@@ -1,0 +1,53 @@
+.root {
+  display: block;
+  text-align: center;
+  margin-bottom: $spacing5;
+  .v-container {
+    #main-wrap & {
+      max-width: 1100px
+    }
+  }
+  @include breakpoints-down(xs) {
+    margin-bottom: $spacing10
+  }
+}
+
+.carousel-wrap {
+  position: relative;
+}
+
+.item {
+  &:focus {
+    outline: none
+  }
+}
+
+.nav {
+  @include palette-background-paper;
+  width: 50px;
+  height: 40px;
+  text-align: center;
+  line-height: 30px;
+  position: absolute;
+  top: calc(50% - 30px);
+  z-index: 90;
+  box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.2);
+  &:hover {
+    background: $palette-primary-light;
+  }
+  i {
+    vertical-align: middle;
+    font-size: 24px;
+    @include palette-text-primary
+  }
+  @include breakpoints-down(md) {
+    display: none
+  }
+}
+
+.prev {
+  left: $spacing5 * -1
+}
+.next {
+  right: $spacing5 * -1
+}

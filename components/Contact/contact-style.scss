@@ -1,0 +1,59 @@
+.team-container {
+  margin-top: -150px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 90px;
+  padding: 40px;
+  background-image: url('/images/CastPhoto.jpg'); // Reuse the same background if needed
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 900px;
+}
+.team-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.88);
+  z-index: 1;
+}
+.about-us-container {
+  text-align: center;
+  margin-top: 150px;
+  color: white;
+  padding: 20px;
+  z-index: 3;
+  width: 800px;
+
+  h2 {
+    font-size: 2.5em;
+  }
+
+  p {
+    font-size: 2em;
+    margin-top: 30px;
+    color: #d0cccc;
+    line-height: 2.1; // Adjusts the spacing between lines
+  }
+}
+
+.contact-details {
+  text-align: center;
+  color: white;
+  font-size: 1.5em;
+  z-index: 2;
+}
+
+.contact-item p a {
+  color: white; // Change the email color to white
+  text-decoration: none;
+}
+
+.contact-item p a:hover {
+  text-decoration: underline; // Optional: add an underline effect on hover
+}

@@ -1,0 +1,137 @@
+.root {
+  display: block;
+  background: $palette-common-black;
+  height: 720px;
+  width: 200%;
+  @include margin-left(-50%);
+  border-radius: 0 0 50% 50%;
+  overflow: hidden;
+  position: relative;
+  @include breakpoints-down(xs) {
+    height: 640px
+  }
+}
+.use-text-title {
+  font-size: 44px; // Adjust the size to your preference
+  line-height: 1.2; // Optional: Adjust line height for better readability
+}
+.use-text-subtitle {
+  padding-top: 10px;
+  font-size: 15px; // Adjust the size to your preference
+  line-height: 1.2; // Optional: Adjust line height for better readability
+}
+.video {
+  height: 100%;
+  width: 50%;
+  @include left(25%);
+  position: absolute;
+  @include breakpoints-down(md) {
+    height: 720px;
+    overflow: hidden;
+  }
+  img {
+    width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 0;
+    @include left(0);
+    @include breakpoints-down(md) {
+      object-fit: cover;
+    }
+  }
+  & > div > div {
+    width: 100% !important;
+  }
+  :deep(iframe) {
+    width: 100% !important;
+    position: relative;
+    top: -30px !important
+  }
+  .v-container {
+    @include breakpoints-down(md) {
+      max-width: 100% !important;
+    }
+    @include breakpoints-down(sm) {
+      margin: 0;
+    }
+    > * {
+      @include breakpoints-down(sm) {
+        text-align: center;
+      }
+    }
+  }
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  background: $palette-common-black;
+  opacity: 0.5;
+  @include left(-50%);
+  width: 200%;
+  height: 100%;
+  z-index: 10;
+  border-radius: 0 0 50% 50%;  
+}
+
+.caption-banner {
+  position: absolute;
+  width: 100%;
+  z-index: 90;
+  @include text-align(left);
+  color: $palette-common-white;
+  top: 45%;
+  @include breakpoints-down(xs) {
+    top: 30%
+  }
+  p {
+    margin: 0;
+  }
+  &:hover {
+    .btn-play {
+      opacity: 1
+    }
+  }
+}
+
+.btn-play {
+  position: absolute;
+  top: -120px;
+  overflow: visible !important;
+  left: 50%;
+  transform: translate(-50%);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  border: 3px solid #fff;
+  i {
+    position: relative;
+    color: $palette-common-white;
+    font-size: 64px;
+    width: 40px;
+    &.ion-arrow-right-b {
+      left: 3px
+    }
+  }
+  span {
+    position: absolute;
+    color: $palette-common-white;
+    text-transform: uppercase;
+    font-weight: $font-bold;
+    font-size: 24px;
+    top: 20px;
+    transition: all 0.3s ease;
+    &:first-child {
+      @include left(-140%);
+      + span {
+        @include right(-155%);
+      }
+    }
+    &.hidden {
+      opacity: 0;
+      transform: scale(0.4);
+    }
+  }
+}

@@ -6,12 +6,7 @@
     <h4 class="secondary-title">
       {{ secondary }}
     </h4>
-    <h4 class="primary-title2">
-      {{ primary2 }}
-    </h4>
-    <h4 class="secondary-title2">
-      {{ secondary2 }}
-    </h4>
+
   </div>
 </template>
 
@@ -30,14 +25,7 @@ export default {
       type: String,
       required: true,
     },
-    primary2: {
-      type: String,
-      required: true,
-    },
-    secondary2: {
-      type: String,
-      required: true,
-    },
+  
     align: {
       type: String,
       default: 'left',

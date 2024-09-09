@@ -8,12 +8,12 @@
     <v-container :class="{ 'fixed-width': isDesktop }">
       <v-row class="spacing3">
         <v-col md="3" cols="12" class="pt-10">
-          <title-main
-            :align="isTablet ? 'center' : 'left'"
-            primary="The"
-            secondary="Shows"
-            
-          />
+          
+          <h1 class="title">
+           <span class="word-the">The</span>
+            <span class="word-shows">Shows</span>
+         </h1>
+
           <span :class="isTablet ? 'text-center custom-text' : 'custom-text'"> 
             The casting team behind... 
           </span>

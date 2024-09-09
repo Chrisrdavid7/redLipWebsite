@@ -54,5 +54,5 @@ export const nuxtI18nOptionsDefault = Object({experimental: Object({"jsTsFormatR
 
 export const nuxtI18nInternalOptions = Object({__normalizedLocales: [Object({"code":"ar","iso":"ar-AR","name":"Arabic","dir":"rtl","files":["lang/ar-AR.json"],"hashes":["409de7fe"],"types":["static"]}),Object({"code":"de","iso":"de-DE","name":"Deutch","dir":"ltr","files":["lang/de-DE.json"],"hashes":["4b76c809"],"types":["static"]}),Object({"code":"id","iso":"id-ID","name":"Bahasa Indonesia","dir":"ltr","files":["lang/id-ID.json"],"hashes":["f67db106"],"types":["static"]}),Object({"code":"pt","iso":"pt-PT","name":"Portuguese","dir":"ltr","files":["lang/pt-PT.json"],"hashes":["56164c83"],"types":["static"]}),Object({"code":"zh","iso":"zh-ZH","name":"Chinese","dir":"ltr","files":["lang/zh-ZH.json"],"hashes":["e47f3ed2"],"types":["static"]}),Object({"code":"en","iso":"eng-US","name":"English","dir":"ltr","files":["lang/en-US.json"],"hashes":["171dc25d"],"types":["static"]})]})
 export const NUXT_I18N_MODULE_ID = "@nuxtjs/i18n"
-export const isSSG = true
+export const isSSG = false
 export const parallelPlugin = false

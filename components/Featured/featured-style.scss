@@ -38,3 +38,23 @@
   
 }
 
+.title {
+  font-weight: $font-bold;
+  display: inline-block; // Keep primary title inline
+  margin-top: -30px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.word-the {
+  color: #976CB6;
+
+  font-size: 6rem; /* Adjust size if necessary */
+}
+
+.word-shows {
+  color: #B77C36;
+  font-size: 6rem; /* Adjust size if necessary */
+  margin-top: -50px; /* Adjust this to move it closer or farther */
+}

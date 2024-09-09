@@ -256,10 +256,11 @@ h2 {
 }
 
 .custom-text {
-  margin-left: 100px;
+  
+  margin-left: 120px;
   margin-bottom: 40px;
- 
-  font-size: 1.2em;
+
+  font-size: 1.3em;
   color: #cccccc;
   
 }
@@ -276,7 +277,7 @@ h2 {
   text-align: left; // Ensures the title is aligned left
   color: #f39c12;
   margin-bottom: 20px;
-  margin-top: 80px;
+  margin-top: 30px;
   font-size: 1.8em;
 }
 .section-title2{

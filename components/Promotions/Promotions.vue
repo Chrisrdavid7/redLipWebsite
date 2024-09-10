@@ -89,7 +89,7 @@ const sliderData = [
     subtitle: 'Now Casting',
     title: 'Chicago Females',
     desc:
-      'Chelsey Creative, the talent team behind Summer House, are on the hunt for the next TV sensation at the Jersey Shore!',
+      'The talent team behind Real Housewives of Dubai are looking for Top Socialites in Chicago for our Brand New Show! Sign up or recommend a friend',
   },
 ];
 

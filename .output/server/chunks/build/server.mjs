@@ -4301,12 +4301,12 @@ const _routes = [
   {
     name: "contact",
     path: "/contact",
-    component: () => import('./contact-BYDw0Woh.mjs').then((m) => m.default || m)
+    component: () => import('./contact-DCJVtPEL.mjs').then((m) => m.default || m)
   },
   {
     name: "detail-movie",
     path: "/detail-movie",
-    component: () => import('./detail-movie-DYYUs5_o.mjs').then((m) => m.default || m)
+    component: () => import('./detail-movie-CC-Hl6ls.mjs').then((m) => m.default || m)
   },
   {
     name: "index",
@@ -4331,7 +4331,7 @@ const _routes = [
   {
     name: "shows",
     path: "/shows",
-    component: () => import('./shows-Q2iMTrXI.mjs').then((m) => m.default || m)
+    component: () => import('./shows-D0fdTkUs.mjs').then((m) => m.default || m)
   }
 ];
 const _wrapIf = (component, props, slots) => {
@@ -28591,7 +28591,7 @@ const MainHeader = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["ssrRender", _sfc_
 const _sfc_main$3 = {};
 function _sfc_ssrRender$2(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
   const _component_nuxt_link = __nuxt_component_0$1;
-  _push(`<div${ssrRenderAttrs(mergeProps({ class: "footer-center" }, _attrs))} data-v-a5e50a14><div class="logo" data-v-a5e50a14><img${ssrRenderAttr("src", _imports_0)} alt="Logo" data-v-a5e50a14></div><div class="menu" data-v-a5e50a14>`);
+  _push(`<div${ssrRenderAttrs(mergeProps({ class: "footer-center" }, _attrs))} data-v-f5d091fb><div class="logo" data-v-f5d091fb><img${ssrRenderAttr("src", _imports_0)} alt="Logo" data-v-f5d091fb></div><div class="menu" data-v-f5d091fb>`);
   _push(ssrRenderComponent(_component_nuxt_link, { to: "/about" }, {
     default: withCtx((_, _push2, _parent2, _scopeId) => {
       if (_push2) {
@@ -28628,7 +28628,7 @@ function _sfc_ssrRender$2(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
     }),
     _: 1
   }, _parent));
-  _push(`</div><div class="socmed" data-v-a5e50a14><a href="https://www.instagram.com/chelzstephens/" data-v-a5e50a14><span class="ion-logo-instagram icon" data-v-a5e50a14></span></a><a href="https://www.linkedin.com/in/chelsey-stephens-9888a813/" data-v-a5e50a14><span class="ion-logo-linkedin icon" data-v-a5e50a14></span></a></div></div>`);
+  _push(`</div><div class="socmed" data-v-f5d091fb><a href="https://www.instagram.com/chelseycreativeinc/" data-v-f5d091fb><span class="ion-logo-instagram icon" data-v-f5d091fb></span></a><a href="https://www.linkedin.com/company/chelsey-creative/" data-v-f5d091fb><span class="ion-logo-linkedin icon" data-v-f5d091fb></span></a></div></div>`);
 }
 const _sfc_setup$3 = _sfc_main$3.setup;
 _sfc_main$3.setup = (props, ctx) => {
@@ -28636,7 +28636,7 @@ _sfc_main$3.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/Footer/Footer.vue");
   return _sfc_setup$3 ? _sfc_setup$3(props, ctx) : void 0;
 };
-const MainFooter = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["ssrRender", _sfc_ssrRender$2], ["__scopeId", "data-v-a5e50a14"]]);
+const MainFooter = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["ssrRender", _sfc_ssrRender$2], ["__scopeId", "data-v-f5d091fb"]]);
 const _sfc_main$2 = {
   setup() {
     const localePath2 = useLocalePath();

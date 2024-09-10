@@ -628,7 +628,50 @@ const _5wP3q8HznJ = (function(nitro) {
 
 const rootDir = "/Users/chrisdavid/Desktop/chelseyCreativeWebsite";
 
-const appHead = {"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"name":"description","content":"Veluxi Movie - Vue Single Landing Page Template"},{"name":"msapplication-TileColor","content":"#FFFFFF"},{"name":"msapplication-TileImage","content":"/favicons/ms-icon-144x144.png"},{"name":"theme-color","content":"#e91e63"},{"property":"author","content":"luxi"},{"property":"og:site_name","content":"luxi.ux-maestro.com"},{"property":"og:locale","content":"en_US"},{"property":"og:type","content":"website"},{"property":"twitter:site","content":"luxi.ux-maestro.com"},{"property":"twitter:domain","content":"luxi.ux-maestro.com"},{"property":"twitter:creator","content":"luxi"},{"property":"twitter:card","content":"summary"},{"property":"twitter:image:src","content":"/images/logo.png"},{"property":"og:url","content":"veluxi.ux-maestro.com/movie"},{"property":"og:title","content":"Movie"},{"property":"og:description","content":"Veluxi Movie - Vue Single Landing Page Template"},{"name":"twitter:site","content":"veluxi.ux-maestro.com/movie"},{"name":"twitter:card","content":"summary_large_image"},{"name":"twitter:image","content":"/images/movie-logo.png"},{"property":"og:image","content":"/images/movie-logo.png"},{"property":"og:image:width","content":"1200"},{"property":"og:image:height","content":"630"}],"link":[{"rel":"shortcut icon","href":"/favicons/favicon.ico"},{"rel":"apple-touch-icon","sizes":"57x57","href":"/favicons/apple-icon-57x57.png"},{"rel":"apple-touch-icon","sizes":"60x60","href":"/favicons/apple-icon-60x60.png"},{"rel":"apple-touch-icon","sizes":"72x72","href":"/favicons/apple-icon-72x72.png"},{"rel":"apple-touch-icon","sizes":"76x76","href":"/favicons/apple-icon-76x76.png"},{"rel":"apple-touch-icon","sizes":"114x114","href":"/favicons/apple-icon-114x114.png"},{"rel":"apple-touch-icon","sizes":"120x120","href":"/favicons/apple-icon-120x120.png"},{"rel":"apple-touch-icon","sizes":"144x144","href":"/favicons/apple-icon-144x144.png"},{"rel":"apple-touch-icon","sizes":"152x152","href":"/favicons/apple-icon-152x152.png"},{"rel":"apple-touch-icon","sizes":"180x180","href":"/favicons/apple-icon-180x180.png"},{"rel":"icon","type":"image/png","sizes":"192x192","href":"/favicons/android-icon-192x192.png"},{"rel":"icon","type":"image/png","sizes":"32x32","href":"/favicons/favicon-32x32.png"},{"rel":"icon","type":"image/png","sizes":"96x96","href":"/favicons/favicon-96x96.png"},{"rel":"icon","type":"image/png","sizes":"16x16","href":"/favicons/favicon-16x16.png"},{"rel":"stylesheet","href":"https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap"},{"rel":"stylesheet","href":"https://fonts.googleapis.com/icon?family=Material+Icons"},{"rel":"stylesheet","href":"https://unpkg.com/ionicons@3.0.0/dist/css/ionicons.min.css"}],"style":[],"script":[],"noscript":[],"title":"Chelsey Creative"};
+const appHead = {
+  "meta": [
+    {"charset": "utf-8"},
+    {"name": "viewport", "content": "width=device-width, initial-scale=1"},
+    {"name": "description", "content": "Chelsey Creative - Original Casting and Development for Award-Winning Shows"},
+    {"name": "msapplication-TileColor", "content": "#da532c"},
+    {"name": "msapplication-TileImage", "content": "/favicons/mstile-150x150.png"},
+    {"name": "theme-color", "content": "#ffffff"},
+    {"property": "author", "content": "Chelsey Creative"},
+    {"property": "og:site_name", "content": "chelseycreative.com"},
+    {"property": "og:locale", "content": "en_US"},
+    {"property": "og:type", "content": "website"},
+    {"property": "og:url", "content": "https://chelseycreative.com"},
+    {"property": "og:title", "content": "Chelsey Creative - Award-Winning Casting and Development"},
+    {"property": "og:description", "content": "Discover the creative team behind iconic TV shows like Real Housewives and Family Karma."},
+    {"property": "og:image", "content": "/images/chelsey-logo.png"},
+    {"property": "og:image:width", "content": "1200"},
+    {"property": "og:image:height", "content": "630"},
+    {"name": "twitter:site", "content": "chelseycreative.com"},
+    {"name": "twitter:creator", "content": "Chelsey Creative"},
+    {"name": "twitter:card", "content": "summary_large_image"},
+    {"name": "twitter:image", "content": "/images/chelsey-logo.png"}
+  ],
+  "link": [
+    {"rel": "shortcut icon", "href": "/favicons/favicon.ico"},
+    {"rel": "apple-touch-icon", "sizes": "57x57", "href": "/favicons/apple-touch-icon-57x57.png"},
+    {"rel": "apple-touch-icon", "sizes": "60x60", "href": "/favicons/apple-touch-icon-60x60.png"},
+    {"rel": "apple-touch-icon", "sizes": "72x72", "href": "/favicons/apple-touch-icon-72x72.png"},
+    {"rel": "apple-touch-icon", "sizes": "76x76", "href": "/favicons/apple-touch-icon-76x76.png"},
+    {"rel": "apple-touch-icon", "sizes": "114x114", "href": "/favicons/apple-touch-icon-114x114.png"},
+    {"rel": "apple-touch-icon", "sizes": "120x120", "href": "/favicons/apple-touch-icon-120x120.png"},
+    {"rel": "apple-touch-icon", "sizes": "144x144", "href": "/favicons/apple-touch-icon-144x144.png"},
+    {"rel": "apple-touch-icon", "sizes": "152x152", "href": "/favicons/apple-touch-icon-152x152.png"},
+    {"rel": "apple-touch-icon", "sizes": "180x180", "href": "/favicons/apple-touch-icon-180x180.png"},
+    {"rel": "icon", "type": "image/png", "sizes": "192x192", "href": "/favicons/android-chrome-192x192.png"},
+    {"rel": "icon", "type": "image/png", "sizes": "32x32", "href": "/favicons/favicon-32x32.png"},
+    {"rel": "icon", "type": "image/png", "sizes": "16x16", "href": "/favicons/favicon-16x16.png"},
+    {"rel": "manifest", "href": "/favicons/site.webmanifest"},
+    {"rel": "mask-icon", "href": "/favicons/safari-pinned-tab.svg", "color": "#5bbad5"},
+    {"rel": "stylesheet", "href": "https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap"},
+    {"rel": "stylesheet", "href": "https://fonts.googleapis.com/icon?family=Material+Icons"},
+    {"rel": "stylesheet", "href": "https://unpkg.com/ionicons@3.0.0/dist/css/ionicons.min.css"}
+  ]
+};
 
 const appRootTag = "div";
 

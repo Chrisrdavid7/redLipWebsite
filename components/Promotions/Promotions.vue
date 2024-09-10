@@ -64,20 +64,14 @@
   </div>
 </template>
 
-
-<style lang="scss" scoped>
-@import './promotion-style.scss';
-</style>
-
 <script>
 import imgAPI from '@/assets/images/imgAPI';
 import Hidden from '../Hidden';
-import link from '~/assets/text/link';
 
 const sliderData = [
   {
     image: imgAPI.movie[1],
-    link:'https://shorehousecasting.castingcrane.com/age-gate',
+    link: 'https://shorehousecasting.castingcrane.com/age-gate',
     subtitle: 'Now Casting',
     title: 'Shore House',
     desc:
@@ -85,7 +79,7 @@ const sliderData = [
   },
   {
     image: imgAPI.movie[13],
-    link:'https://chicagofemalemvps.castingcrane.com/',
+    link: 'https://chicagofemalemvps.castingcrane.com/',
     subtitle: 'Now Casting',
     title: 'Chicago Females',
     desc:
@@ -116,7 +110,7 @@ export default {
       this.autoplay = setInterval(() => {
         this.currentImg += 1;
         this.transition = 'slide-right';
-      }, 100000);
+      }, 5000); // Set autoplay speed (in ms)
     },
     manualPlay() {
       clearInterval(this.autoplay);
@@ -128,7 +122,6 @@ export default {
       this.manualPlay();
       this.currentImg += 1;
       this.transition = 'slide-right';
-      console.log(this.content[Math.abs(this.currentImg) % this.content.length].image);
     },
     prev() {
       this.manualPlay();
@@ -144,3 +137,109 @@ export default {
   },
 };
 </script>
+
+<style lang="scss" scoped>
+@import './promotion-style.scss';
+
+.root {
+  position: relative;
+  margin-top: -130px;
+  z-index: 12;
+  max-width: 1000px;
+  @include breakpoints-up(md) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  > div {
+    @include breakpoints-down(md) {
+      padding: 0 !important
+    }
+  }
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  @include breakpoints-up(sm) {
+    top: -70%;
+    opacity: 0.8;
+  }
+  figure {
+    @include breakpoints-up(sm) {
+      filter: blur(20px);
+    }
+    margin: 0;
+    img {
+      width: 100%
+    }
+  }
+}
+
+.desc {
+  max-height: 130px;
+  min-height: 100px;
+  overflow: hidden;
+  padding: spacing(1, 0);
+  margin-bottom: $spacing2;
+  h6 {
+    font-weight: $font-medium;
+  }
+  @include breakpoints-down(xs) {
+    display: none;
+  }
+}
+
+.inner-bg {
+  overflow: hidden;
+  width: 100%;
+  @include palette-background-paper;
+  padding: $spacing6;
+  .v-row {
+    z-index: 2;
+    position: relative;
+  }
+  @include breakpoints-down(xs) {
+    padding: 0
+  }
+}
+
+.slider-wrap {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  @include breakpoints-up(md) {
+    height: $height;
+    @include use-theme(box-shadow, 0 1.5px 12px 2px rgba(0, 0, 0, 0.06), (0px 1px 3px 0px rgba(64, 64, 64, 1), 0px 1px 1px 0px rgba(42, 42, 42, 1), 0px 2px 1px -1px rgba(20, 20, 20, 1)));
+    border-radius: 32px;
+  }
+  > div {
+    overflow: hidden;
+    z-index: 1;
+    @include breakpoints-down(xs) {
+      height: $height-mobile
+    }
+  }
+}
+
+a.prev {
+  @include left(-20px);
+  @include padding-right(12px);
+  @include breakpoints-up(lg) {
+    @include left(-40px);
+  }
+  @include arrow-nav;
+}
+
+a.next {
+  @include right(-20px);
+  @include padding-left(12px);
+  @include breakpoints-up(lg) {
+    @include right(-40px);
+  }
+  @include arrow-nav;
+}
+</style>

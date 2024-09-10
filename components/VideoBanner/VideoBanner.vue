@@ -1,121 +1,74 @@
 <template>
-  <div class="root">
+  <div class="video-container">
     <div class="video">
-      <div class="overlay" />
-      <img v-if="!play || isMobile" :src="imgAPI.movie[0]" alt="cover">
-      <div v-if="yt.use">
-        <YouTube
-          v-if="isDesktop"
-          ref="youtube"
-          :src="videoId"
-          :vars="playerVars"
-          width="1080"
-          height="720"
-          @ready="playing"
-          @state-change="ended"
-        />
-      </div>
-      <div class="caption-banner">
-        <v-container>
-          <hidden point="mdDown">
-            <v-btn
-              v-if="play"
-              icon
-              variant="outlined"
-              class="btn-play"
-              @click="togglePause()"
-            >
-              <span :class="{ hidden: playCtrl }">watch</span>
-              <span :class="{ hidden: playCtrl }">trailer</span>
-              <i v-if="playCtrl" class="ion-ios-pause-outline" />
-              <i v-else class="ion-ios-play" />
-            </v-btn>
-          </hidden>
-          <v-row>
-            <v-col md="5" cols="12">
-              <p class="use-text-paragraph">
-              
-              </p>
-              <h2 class="use-text-title">
-                The Real Housewives of Dubai
-              </h2>
-              <p class="use-text-subtitle">
-                Bravo Networks
-              </p>
-            </v-col>
-          </v-row>
-        </v-container>
+      <iframe
+        width="100%"
+        height="100%"
+        :src="'https://www.youtube.com/embed/' + videoId + '?autoplay=1&mute=1&controls=0&rel=0&showinfo=0'"
+        frameborder="0"
+        allow="autoplay; encrypted-media"
+        allowfullscreen
+      ></iframe>
+    
+      <div class="video-caption">
+        <h1>The Real Housewives of Dubai</h1>
+        <p>Bravo Networks</p>
       </div>
     </div>
   </div>
 </template>
 
-<style lang="scss" scoped>
-@import './banner-style.scss';
+<style scoped>
+.video-container {
+  width: 100vw;
+  height: calc(100vw * 9 / 16);
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 0 0 20% 20%; /* Add curved effect */
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Position the text over the video */
+.video-caption {
+  position: absolute;
+  top: 50%; /* Adjust based on where you want it to be vertically */
+  left: 5%; /* Adjust the left positioning */
+  transform: translateY(-50%); /* Center the text vertically */
+  color: white; /* Ensure text is visible over the video */
+  text-align: left;
+  z-index: 2;
+}
+
+.video-caption h1 {
+  font-size: 2.9vw; /* Adjust font size */
+  width: 75%;
+  margin: 0;
+}
+
+.video-caption p {
+  font-size: 1vw; /* Adjust font size */
+  margin-top: 10px;
+}
+
 </style>
 
 <script>
-import imgAPI from '@/assets/images/imgAPI';
-import youtube from '@/config/youtube';
-import Hidden from '../Hidden';
-
 export default {
-  components: {
-    Hidden,
-  },
   data() {
     return {
-      imgAPI,
-      loaded: false,
-      videoId: 'kDignq3wgJg',
-      playerVars: {
-        autoplay: 1,
-        controls: 0,
-        rel: 0,
-        showinfo: 0,
-        mute: 1,
-        origin: 'http://localhost:8010',
-      },
-      yt: youtube,
-      play: false,
-      playCtrl: true,
-      cover: imgAPI.movie[0],
+      videoId: 'kDignq3wgJg', // Your YouTube video ID
     };
-  },
-  computed: {
-    player() {
-      return this.$refs.youtube.player;
-    },
-    isDesktop() {
-      const lgUp = this.$vuetify.display.lgAndUp;
-      return lgUp;
-    },
-    isMobile() {
-      const mdDown = this.$vuetify.display.mdAndDown;
-      return mdDown;
-    },
-  },
-  mounted() {
-    this.loaded = true;
-  },
-  methods: {
-    playing() {
-      this.play = true;
-      this.playCtrl = true;
-    },
-    ended(val) {
-      if (val.data === 0) {
-        this.player.playVideo();
-      }
-    },
-    togglePause() {
-      this.playCtrl = !this.playCtrl;
-      if (this.playCtrl) {
-        this.player.playVideo();
-      } else {
-        this.player.pauseVideo();
-      }
-    },
-  },
+  }
 };
 </script>

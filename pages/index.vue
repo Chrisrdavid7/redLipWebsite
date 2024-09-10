@@ -28,10 +28,13 @@
 @function section-margin($margin) {
   @return $margin * 20;
 }
+
 .main-wrap {
   position: relative;
   width: 100%;
   overflow: hidden;
+
+  // Background color for light and dark themes
   .theme--dark & {
     background-color: $dark-background-default;
   }
@@ -39,38 +42,26 @@
     background-color: $light-background-paper;
   }
 }
+
 .space-bottom {
-  margin-bottom: section-margin(6px);
-  @include breakpoints-down(sm) {
-    margin-bottom: section-margin(3px);
-  }
-  @include breakpoints-down(xs) {
-    margin-bottom: section-margin(2px);
-  }
+  margin-bottom: section-margin(6px); // Set consistent margins
 }
+
 .space-bottom-short {
-  margin-bottom: section-margin($spacing1 * 0.5);
+  margin-bottom: section-margin($spacing1 * 0.5); // Consistent for all devices
 }
+
 .space-top {
-  margin-top: section-margin(6px);
-  @include breakpoints-down(sm) {
-    margin-top: section-margin(3px);
-  }
-  @include breakpoints-down(xs) {
-    margin-top: section-margin(2px);
-  }
+  margin-top: section-margin(6px); // Consistent for all devices
 }
+
 .space-top-short {
-  margin-top: section-margin($spacing1 * 0.5);
-  @include breakpoints-down(sm) {
-    margin-top: section-margin(3px);
-  }
-  @include breakpoints-down(xs) {
-    margin-top: section-margin(2px);
-  }
+  margin-top: section-margin($spacing1 * 0.5); // Consistent for all devices
 }
+
 .container-wrap {
   margin-top: -40px;
+  
   > section {
     position: relative;
   }
@@ -82,17 +73,9 @@ import MainContainer from '@/components/MainContainer';
 import VideoBanner from '@/components/VideoBanner';
 import Promotions from '@/components/Promotions';
 import Featured from '@/components/Featured';
-import Trending from '@/components/Trending';
-import About from '@/components/About';
-import Categories from '@/components/Categories';
-import AllCategories from '@/components/AllCategories';
-import PricingPlan from '@/components/PricingPlan';
-import Faq from '@/components/Faq';
 import NewsEvent from '@/components/NewsEvent';
-import Hidden from '@/components/Hidden';
 import PageNav from '@/components/PageNav';
 import Notification from '@/components/Notification';
-import brand from '@/assets/text/brand';
 import { defineNuxtComponent } from '#app';
 
 export default defineNuxtComponent({
@@ -100,21 +83,14 @@ export default defineNuxtComponent({
     MainContainer,
     VideoBanner,
     Promotions,
-    About,
     Featured,
-    Trending,
-    Categories,
-    AllCategories,
-    PricingPlan,
-    Faq,
     NewsEvent,
     PageNav,
-    Hidden,
-    Notification,
+    Notification
   },
   head() {
     return {
-      title:'Chelsey Creative',
+      title: 'Chelsey Creative',
     };
   },
 });

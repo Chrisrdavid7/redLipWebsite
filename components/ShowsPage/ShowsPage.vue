@@ -4,7 +4,7 @@
     <div class="theShows">
       <v-container :class="{ 'fixed-width': isDesktop }">
         <v-row class="spacing3" justify="center">
-          <v-col md="5" cols="12" class="pt-10">
+          <v-col cols="5" class="pt-10">
             <title-main
               :align="isTablet ? 'center' : 'left'"
               primary="The"
@@ -22,13 +22,12 @@
             <h2 class="section-title1">Original Casting and Development</h2>
           </v-col>
           <v-col
-            v-for="(item, index) in originalCastingList"
-            :key="index"
-            md="3"
-            sm="4"
-            cols="12"
-            class="movie-col"
-          >
+  v-for="(item, index) in originalCastingList"
+  :key="index"
+  cols="3" 
+  class="movie-col"
+>
+
             <movie-thumb
               :text="item.title"
               :img="item.thumb"
@@ -259,8 +258,7 @@ h2 {
   
   margin-left: 120px;
   margin-bottom: 40px;
-
-  font-size: 1.3em;
+  font-size: 20px; /* Use px to fix the font size */
   color: #cccccc;
   
 }
@@ -274,17 +272,22 @@ h2 {
   border-radius: 8px;
 }
 .section-title1{
-  text-align: left; // Ensures the title is aligned left
+  text-align: left;
   color: #f39c12;
   margin-bottom: 20px;
   margin-top: 30px;
-  font-size: 1.8em;
+  font-size: 28px; /* Fixed font size */
 }
 .section-title2{
-  text-align: center; // Ensures the title is aligned left
+  text-align: center;
   color: #f39c12;
   margin-bottom: 20px;
   margin-top: 80px;
-  font-size: 3.5em;
+  font-size: 56px; /* Fixed font size */
 }
+.movie-col {
+  flex-basis: 25%; /* Fix the column width */
+  max-width: 25%;
+}
+
 </style>

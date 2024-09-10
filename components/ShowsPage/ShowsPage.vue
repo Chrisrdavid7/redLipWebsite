@@ -220,7 +220,7 @@ export default {
   align-items: center;
   gap: 90px;
   padding: 40px;
-  background-image: url('/images/brooklyn.jpg'); // Reuse the same background if needed
+  background-image: url('/images/nightSky.jpg'); // Reuse the same background if needed
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -236,7 +236,7 @@ export default {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.88); // Adjusted transparency to 0.75
+  background-color: rgba(0, 0, 0, 0.75); // Adjusted transparency to 0.75
   z-index: 1;
 }
 

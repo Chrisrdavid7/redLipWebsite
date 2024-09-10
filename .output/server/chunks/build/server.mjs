@@ -4311,7 +4311,7 @@ const _routes = [
   {
     name: "index",
     path: "/",
-    component: () => import('./index-DkjnyCRR.mjs').then((m) => m.default || m)
+    component: () => import('./index-DL5pNBvq.mjs').then((m) => m.default || m)
   },
   {
     name: "login",
@@ -28061,7 +28061,7 @@ function _sfc_ssrRender$4(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
   const _component_v_list_item = resolveComponent("v-list-item");
   const _component_v_list_item_title = resolveComponent("v-list-item-title");
   const _component_v_divider = resolveComponent("v-divider");
-  _push(`<div${ssrRenderAttrs(mergeProps({ class: "mobile-nav" }, _attrs))} data-v-dbfed733><div class="${ssrRenderClass([{ "menu-open": $props.open }, "menu"])}" data-v-dbfed733>`);
+  _push(`<div${ssrRenderAttrs(mergeProps({ class: "mobile-nav" }, _attrs))} data-v-f5d2854c><div class="${ssrRenderClass([{ "menu-open": $props.open }, "menu"])}" data-v-f5d2854c>`);
   _push(ssrRenderComponent(_component_v_list, {
     dense: "",
     tag: "nav"
@@ -28114,26 +28114,10 @@ function _sfc_ssrRender$4(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
         }, {
           default: withCtx((_2, _push3, _parent3, _scopeId2) => {
             if (_push3) {
-              _push3(ssrRenderComponent(_component_v_list_item_title, { class: "menu-list" }, {
-                default: withCtx((_3, _push4, _parent4, _scopeId3) => {
-                  if (_push4) {
-                    _push4(`${ssrInterpolate(_ctx.$t("movieLanding.header_" + _ctx.item))}`);
-                  } else {
-                    return [
-                      createTextVNode(toDisplayString(_ctx.$t("movieLanding.header_" + _ctx.item)), 1)
-                    ];
-                  }
-                }),
-                _: 1
-              }, _parent3, _scopeId2));
+              _push3(ssrRenderComponent(_component_v_list_item_title, { class: "menu-list" }, null, _parent3, _scopeId2));
             } else {
               return [
-                createVNode(_component_v_list_item_title, { class: "menu-list" }, {
-                  default: withCtx(() => [
-                    createTextVNode(toDisplayString(_ctx.$t("movieLanding.header_" + _ctx.item)), 1)
-                  ]),
-                  _: 1
-                })
+                createVNode(_component_v_list_item_title, { class: "menu-list" })
               ];
             }
           }),
@@ -28167,12 +28151,7 @@ function _sfc_ssrRender$4(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
             link: ""
           }, {
             default: withCtx(() => [
-              createVNode(_component_v_list_item_title, { class: "menu-list" }, {
-                default: withCtx(() => [
-                  createTextVNode(toDisplayString(_ctx.$t("movieLanding.header_" + _ctx.item)), 1)
-                ]),
-                _: 1
-              })
+              createVNode(_component_v_list_item_title, { class: "menu-list" })
             ]),
             _: 1
           }, 8, ["href", "style"]))
@@ -28189,7 +28168,7 @@ _sfc_main$5.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/Header/MobileMenu.vue");
   return _sfc_setup$5 ? _sfc_setup$5(props, ctx) : void 0;
 };
-const MobileMenu = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["ssrRender", _sfc_ssrRender$4], ["__scopeId", "data-v-dbfed733"]]);
+const MobileMenu = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["ssrRender", _sfc_ssrRender$4], ["__scopeId", "data-v-f5d2854c"]]);
 let counter = 0;
 function createData(name, url) {
   counter += 1;

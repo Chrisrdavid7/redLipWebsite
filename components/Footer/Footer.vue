@@ -11,8 +11,8 @@
     <div class="socmed">
       <!-- <a href="https://www.facebook.com/home.php"><span class="ion-logo-facebook icon"></span></a>
       <a href="https://x.com/home"><span class="ion-logo-twitter icon"></span></a> -->
-      <a href="https://www.instagram.com/chelzstephens/"><span class="ion-logo-instagram icon"></span></a>
-      <a href="https://www.linkedin.com/in/chelsey-stephens-9888a813/"><span class="ion-logo-linkedin icon"></span></a>
+      <a href="https://www.instagram.com/chelseycreativeinc/"><span class="ion-logo-instagram icon"></span></a>
+      <a href="https://www.linkedin.com/company/chelsey-creative/"><span class="ion-logo-linkedin icon"></span></a>
     </div>
   </div>
 </template>

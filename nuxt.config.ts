@@ -15,18 +15,18 @@ export default defineNuxtConfig({
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { name: 'description', content: brand.movie.desc },
         { name: 'msapplication-TileColor', content: '#FFFFFF' },
-        { name: 'msapplication-TileImage', content: '/favicons/ms-icon-144x144.png' },
+        { name: 'msapplication-TileImage', content: '/favicons/favicon-32x32.png' },
         // PWA primary color
         { name: 'theme-color', content: theme.primary},
         // Facebook
-        { property: 'author', content: 'luxi' },
-        { property: 'og:site_name', content: 'luxi.ux-maestro.com' },
+        { property: 'author', content: 'Chris David' },
+        { property: 'og:site_name', content: 'chelseycreative.com' },
         { property: 'og:locale', content: 'en_US' },
         { property: 'og:type', content: 'website' },
         // Twitter
-        { property: 'twitter:site', content: 'luxi.ux-maestro.com' },
-        { property: 'twitter:domain', content: 'luxi.ux-maestro.com' },
-        { property: 'twitter:creator', content: 'luxi' },
+        { property: 'twitter:site', content: 'chelseycreative.com' },
+        { property: 'twitter:domain', content: 'chelseycreative.com' },
+        { property: 'twitter:creator', content: 'Chris' },
         { property: 'twitter:card', content: 'summary' },
         { property: 'twitter:image:src', content: '/images/logo.png' },
         { property: 'og:url', content: brand.movie.url },
@@ -55,7 +55,7 @@ export default defineNuxtConfig({
         { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicons/favicon-32x32.png' },
         { rel: 'icon', type: 'image/png', sizes: '96x96', href: '/favicons/favicon-96x96.png' },
         { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicons/favicon-16x16.png' },
-       // { rel: 'manifest', href: '/favicons/manifest.json' },
+
         // Fonts and Icons
         { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap' },
         { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' },

@@ -1,14 +1,14 @@
 const brand = {
   movie: {
-    name: 'Movie',
-    desc: 'Veluxi Movie - Vue Single Landing Page Template',
-    prefix: 'veluxi',
+    name: 'Chelsey Creative',
+    desc: 'Chelsey Creative - Original Casting and Development for Award-Winning Shows',
+    prefix: ' ',
     footerText: '',
     logoText: '',
-    projectName: 'Movie',
-    url: 'veluxi.ux-maestro.com/movie',
+    projectName: 'Chelsey Creative',
+    url: 'chelseycreative.com',
     img: '/images/movie-logo.png',
-    notifMsg: 'Donec sit amet nulla sed arcu pulvinar ultricies commodo id ligula.',
+    notifMsg: 'Built by Chris David',
   },
 };
 

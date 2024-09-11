@@ -256,9 +256,9 @@ h2 {
 
 .custom-text {
   
-  margin-left: 120px;
+
   margin-bottom: 40px;
-  font-size: 20px; /* Use px to fix the font size */
+  font-size: 20vm; /* Use px to fix the font size */
   color: #cccccc;
   
 }

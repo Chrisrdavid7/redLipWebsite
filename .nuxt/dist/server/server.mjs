@@ -646,12 +646,12 @@ const _routes = [
   {
     name: "detail-movie",
     path: "/detail-movie",
-    component: () => import("./_nuxt/detail-movie-BhQEH270.js").then((m) => m.default || m)
+    component: () => import("./_nuxt/detail-movie-BpfgOf8F.js").then((m) => m.default || m)
   },
   {
     name: "index",
     path: "/",
-    component: () => import("./_nuxt/index-D52H953J.js").then((m) => m.default || m)
+    component: () => import("./_nuxt/index-BTttB23u.js").then((m) => m.default || m)
   },
   {
     name: "login",
@@ -671,7 +671,7 @@ const _routes = [
   {
     name: "shows",
     path: "/shows",
-    component: () => import("./_nuxt/shows-CY6SFuxU.js").then((m) => m.default || m)
+    component: () => import("./_nuxt/shows-Bmx8WY_6.js").then((m) => m.default || m)
   }
 ];
 const _wrapIf = (component, props, slots) => {

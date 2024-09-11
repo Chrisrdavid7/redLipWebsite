@@ -4306,12 +4306,12 @@ const _routes = [
   {
     name: "detail-movie",
     path: "/detail-movie",
-    component: () => import('./detail-movie-BhQEH270.mjs').then((m) => m.default || m)
+    component: () => import('./detail-movie-BpfgOf8F.mjs').then((m) => m.default || m)
   },
   {
     name: "index",
     path: "/",
-    component: () => import('./index-D52H953J.mjs').then((m) => m.default || m)
+    component: () => import('./index-BTttB23u.mjs').then((m) => m.default || m)
   },
   {
     name: "login",
@@ -4331,7 +4331,7 @@ const _routes = [
   {
     name: "shows",
     path: "/shows",
-    component: () => import('./shows-CY6SFuxU.mjs').then((m) => m.default || m)
+    component: () => import('./shows-Bmx8WY_6.mjs').then((m) => m.default || m)
   }
 ];
 const _wrapIf = (component, props, slots) => {

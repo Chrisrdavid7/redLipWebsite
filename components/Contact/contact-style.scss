@@ -28,16 +28,17 @@
   color: white;
   padding: 20px;
   z-index: 3;
-  width: 300vm;
+
+  width: 70vw;
 
   h2 {
     margin-top: 50px;
-    font-size: 3.5vm;
+    font-size: 2.5vw;
   }
 
   p {
-    font-size: 3vh;
-    margin-top: 20px;
+    font-size: 2.5vw;
+    margin-top: 10px;
     color: #d0cccc;
     line-height: 2.1; // Adjusts the spacing between lines
   }
@@ -46,13 +47,14 @@
 .contact-details {
   text-align: center;
   color: white;
-  font-size: 1.5em;
+  font-size: 2vw;
   z-index: 2;
 }
 
 .contact-item p a {
   color: white; // Change the email color to white
   text-decoration: none;
+  font-size: 2vw;
 }
 
 .contact-item p a:hover {

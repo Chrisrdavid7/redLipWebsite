@@ -5,14 +5,13 @@
       <v-container :class="{ 'fixed-width': isDesktop }">
         <v-row class="spacing3" justify="center">
           <v-col cols="5" class="pt-10">
-            <title-main
-              :align="isTablet ? 'center' : 'left'"
-              primary="The"
-              secondary="Shows"
-            />
-            <span :class="isTablet ? 'text-center custom-text' : 'custom-text'"> 
-              The award-winning team behind... 
-            </span>
+             <!-- Custom Heading -->
+          <h1 class="custom-title">
+            <span class="primary-text">The</span> <span class="secondary-text">Shows</span>
+          </h1>
+
+          <!-- Custom Subtitle -->
+          <p class="custom-subtitle">The award-winning team behind...</p>
           </v-col>
         </v-row>
 
@@ -22,11 +21,11 @@
             <h2 class="section-title1">Original Casting and Development</h2>
           </v-col>
           <v-col
-  v-for="(item, index) in originalCastingList"
-  :key="index"
-  cols="3" 
-  class="movie-col"
->
+             v-for="(item, index) in originalCastingList"
+             :key="index"
+              cols="3" 
+              class="movie-col"
+               >
 
             <movie-thumb
               :text="item.title"
@@ -276,18 +275,41 @@ h2 {
   color: #f39c12;
   margin-bottom: 20px;
   margin-top: 30px;
-  font-size: 28px; /* Fixed font size */
+  font-size: 1.56vw; /* Fixed font size */
 }
 .section-title2{
   text-align: center;
   color: #f39c12;
   margin-bottom: 20px;
   margin-top: 80px;
-  font-size: 56px; /* Fixed font size */
+  font-size: 2.92vw; /* Fixed font size */
 }
 .movie-col {
   flex-basis: 25%; /* Fix the column width */
   max-width: 25%;
 }
+/* Styling for the custom title */
+.custom-title {
+  text-align: center;
+  font-size: 5.5vw; /* Adjust font size */
+  font-weight: bold;
+   margin-top: -10vh;
+}
 
+/* Styling for primary and secondary text in the title */
+.primary-text {
+  color: #f5a623; /* Orange color */
+}
+
+.secondary-text {
+  color: #a277ff; /* Purple color */
+}
+
+/* Styling for the subtitle */
+.custom-subtitle {
+  font-size: 1.5vw;
+  color: #d0cccc;
+  margin-top: 15px;
+  text-align: center;
+}
 </style>

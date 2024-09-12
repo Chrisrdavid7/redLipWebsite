@@ -13,7 +13,7 @@
 };
 
 $height: 450px;
-$height-mobile: 580px;
+$height-mobile: 200px;
 
 .root {
   position: relative;
@@ -23,6 +23,11 @@ $height-mobile: 580px;
   @include breakpoints-up(md) {
     margin-left: auto;
     margin-right: auto;
+  }
+  @include breakpoints-down(xs) {
+    margin-top: 100px;
+    margin-left: 5vw;
+    margin-right: 5vw;
   }
   > div {
     @include breakpoints-down(md) {
@@ -62,7 +67,7 @@ $height-mobile: 580px;
     font-weight: $font-medium;
   }
   @include breakpoints-down(xs) {
-    display: none;
+   
   }
 }
 

@@ -631,7 +631,7 @@ const _routes = [
   {
     name: "about",
     path: "/about",
-    component: () => import("./_nuxt/about-BgmiK_D3.js").then((m) => m.default || m)
+    component: () => import("./_nuxt/about-_i-tvtYW.js").then((m) => m.default || m)
   },
   {
     name: "blank-page",
@@ -641,17 +641,17 @@ const _routes = [
   {
     name: "contact",
     path: "/contact",
-    component: () => import("./_nuxt/contact-DQapX93b.js").then((m) => m.default || m)
+    component: () => import("./_nuxt/contact-CJxJD8Jv.js").then((m) => m.default || m)
   },
   {
     name: "detail-movie",
     path: "/detail-movie",
-    component: () => import("./_nuxt/detail-movie-BpfgOf8F.js").then((m) => m.default || m)
+    component: () => import("./_nuxt/detail-movie-K5paJV9s.js").then((m) => m.default || m)
   },
   {
     name: "index",
     path: "/",
-    component: () => import("./_nuxt/index-BTttB23u.js").then((m) => m.default || m)
+    component: () => import("./_nuxt/index-DQTL1RF5.js").then((m) => m.default || m)
   },
   {
     name: "login",
@@ -671,7 +671,7 @@ const _routes = [
   {
     name: "shows",
     path: "/shows",
-    component: () => import("./_nuxt/shows-Bmx8WY_6.js").then((m) => m.default || m)
+    component: () => import("./_nuxt/shows-CGfXTKKw.js").then((m) => m.default || m)
   }
 ];
 const _wrapIf = (component, props, slots) => {

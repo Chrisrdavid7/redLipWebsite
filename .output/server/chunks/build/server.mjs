@@ -4291,7 +4291,7 @@ const _routes = [
   {
     name: "about",
     path: "/about",
-    component: () => import('./about-BgmiK_D3.mjs').then((m) => m.default || m)
+    component: () => import('./about-_i-tvtYW.mjs').then((m) => m.default || m)
   },
   {
     name: "blank-page",
@@ -4301,17 +4301,17 @@ const _routes = [
   {
     name: "contact",
     path: "/contact",
-    component: () => import('./contact-DQapX93b.mjs').then((m) => m.default || m)
+    component: () => import('./contact-CJxJD8Jv.mjs').then((m) => m.default || m)
   },
   {
     name: "detail-movie",
     path: "/detail-movie",
-    component: () => import('./detail-movie-BpfgOf8F.mjs').then((m) => m.default || m)
+    component: () => import('./detail-movie-K5paJV9s.mjs').then((m) => m.default || m)
   },
   {
     name: "index",
     path: "/",
-    component: () => import('./index-BTttB23u.mjs').then((m) => m.default || m)
+    component: () => import('./index-DQTL1RF5.mjs').then((m) => m.default || m)
   },
   {
     name: "login",
@@ -4331,7 +4331,7 @@ const _routes = [
   {
     name: "shows",
     path: "/shows",
-    component: () => import('./shows-Bmx8WY_6.mjs').then((m) => m.default || m)
+    component: () => import('./shows-CGfXTKKw.mjs').then((m) => m.default || m)
   }
 ];
 const _wrapIf = (component, props, slots) => {

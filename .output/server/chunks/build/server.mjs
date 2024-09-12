@@ -4311,7 +4311,7 @@ const _routes = [
   {
     name: "index",
     path: "/",
-    component: () => import('./index-DQTL1RF5.mjs').then((m) => m.default || m)
+    component: () => import('./index-thrhzbAL.mjs').then((m) => m.default || m)
   },
   {
     name: "login",

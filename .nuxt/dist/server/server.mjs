@@ -651,7 +651,7 @@ const _routes = [
   {
     name: "index",
     path: "/",
-    component: () => import("./_nuxt/index-DQTL1RF5.js").then((m) => m.default || m)
+    component: () => import("./_nuxt/index-thrhzbAL.js").then((m) => m.default || m)
   },
   {
     name: "login",

@@ -20,14 +20,14 @@ $height-mobile: 580px;
   margin-top: -130px;
   z-index: 12;
   max-width: 1000px;
-
   @include breakpoints-up(md) {
     margin-left: auto;
     margin-right: auto;
   }
-
-  @include breakpoints-down(xs) {
-    display: none; // This hides the entire section on mobile screens
+  > div {
+    @include breakpoints-down(md) {
+      padding: 0 !important
+    }
   }
 }
 

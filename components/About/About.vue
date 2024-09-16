@@ -3,12 +3,13 @@
     <div class="about-us-container">
       <h2>About Us</h2>
       <p>
-        Led by founder and CEO Chelsey Stephens, Red Lip Productions is a dynamic, 
-        full-service content development, casting and televison production company based in New York City, 
-        where creativity drives everything we do. With over 15 years of award-winning 
-        experience, our core team specializes in content development, creating hit series, 
-        and turning real people into superstars. We collaborate with top networks and streaming 
-        platforms to develop new shows and cast for existing series, ensuring every project reaches its full creative potential.
+        Led by visionary founder Chelsey Stephens, Red Lip Productions is a dynamic, 
+        full-service content development, casting, and television production company 
+        based in New York City, where creativity is at the heart of everything we do. 
+        With over 15 years of award-winning experience, our dedicated team specializes in 
+        crafting hit series and transforming real people into household names. 
+        We collaborate with leading networks and streaming platforms to bring new shows 
+        to life and cast for existing series, ensuring every project achieves its fullest creative potential.
       </p>
     </div>
 

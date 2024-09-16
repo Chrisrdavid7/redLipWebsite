@@ -1,0 +1,1 @@
+import{_ as s,o as t,c as o,b as e}from"./Uvy604Sd.js";const n={},c=e("h1",null,"News Page",-1),_=e("p",null,"This is the news section of Chelsey Creative.",-1),a=[c,_];function r(i,l){return t(),o("div",null,a)}const h=s(n,[["render",r]]);export{h as default};

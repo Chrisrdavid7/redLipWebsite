@@ -4291,27 +4291,27 @@ const _routes = [
   {
     name: "about",
     path: "/about",
-    component: () => import('./about-_i-tvtYW.mjs').then((m) => m.default || m)
+    component: () => import('./about-BSYTSXhH.mjs').then((m) => m.default || m)
   },
   {
     name: "blank-page",
     path: "/blank-page",
-    component: () => import('./blank-page-DuG0NlMm.mjs').then((m) => m.default || m)
+    component: () => import('./blank-page-2FHzTi9u.mjs').then((m) => m.default || m)
   },
   {
     name: "contact",
     path: "/contact",
-    component: () => import('./contact-CJxJD8Jv.mjs').then((m) => m.default || m)
+    component: () => import('./contact-D3Cg92uq.mjs').then((m) => m.default || m)
   },
   {
     name: "detail-movie",
     path: "/detail-movie",
-    component: () => import('./detail-movie-K5paJV9s.mjs').then((m) => m.default || m)
+    component: () => import('./detail-movie-we9Dveh2.mjs').then((m) => m.default || m)
   },
   {
     name: "index",
     path: "/",
-    component: () => import('./index-CkdbOtMg.mjs').then((m) => m.default || m)
+    component: () => import('./index-lBaECm5t.mjs').then((m) => m.default || m)
   },
   {
     name: "login",
@@ -4331,7 +4331,7 @@ const _routes = [
   {
     name: "shows",
     path: "/shows",
-    component: () => import('./shows-CGfXTKKw.mjs').then((m) => m.default || m)
+    component: () => import('./shows-BJGxFcMH.mjs').then((m) => m.default || m)
   }
 ];
 const _wrapIf = (component, props, slots) => {
@@ -6556,11 +6556,11 @@ const resolveNuxtI18nOptions = async (context) => {
   };
   const vueI18n = await vueI18nConfigLoader(() => import(
     './i18n-BNepGGiu.mjs'
-    /* webpackChunkName: "__config_i18n_js_a8e03f91" */
+    /* webpackChunkName: "__config_i18n_js_bc1a344f" */
   ));
   nuxtI18nOptions.vueI18n = vueI18n;
   (_a2 = nuxtI18nOptions.vueI18n).messages ?? (_a2.messages = {});
-  nuxtI18nOptions.locales = [Object({ "code": "ar", "iso": "ar-AR", "name": "Arabic", "dir": "rtl", "files": ["lang/ar-AR.json"], "hashes": ["409de7fe"], "types": ["static"] }), Object({ "code": "de", "iso": "de-DE", "name": "Deutch", "dir": "ltr", "files": ["lang/de-DE.json"], "hashes": ["4b76c809"], "types": ["static"] }), Object({ "code": "id", "iso": "id-ID", "name": "Bahasa Indonesia", "dir": "ltr", "files": ["lang/id-ID.json"], "hashes": ["f67db106"], "types": ["static"] }), Object({ "code": "pt", "iso": "pt-PT", "name": "Portuguese", "dir": "ltr", "files": ["lang/pt-PT.json"], "hashes": ["56164c83"], "types": ["static"] }), Object({ "code": "zh", "iso": "zh-ZH", "name": "Chinese", "dir": "ltr", "files": ["lang/zh-ZH.json"], "hashes": ["e47f3ed2"], "types": ["static"] }), Object({ "code": "en", "iso": "eng-US", "name": "English", "dir": "ltr", "files": ["lang/en-US.json"], "hashes": ["171dc25d"], "types": ["static"] })];
+  nuxtI18nOptions.locales = [Object({ "code": "ar", "iso": "ar-AR", "name": "Arabic", "dir": "rtl", "files": ["lang/ar-AR.json"], "hashes": ["37fc0908"], "types": ["static"] }), Object({ "code": "de", "iso": "de-DE", "name": "Deutch", "dir": "ltr", "files": ["lang/de-DE.json"], "hashes": ["78192edd"], "types": ["static"] }), Object({ "code": "id", "iso": "id-ID", "name": "Bahasa Indonesia", "dir": "ltr", "files": ["lang/id-ID.json"], "hashes": ["4fb676f1"], "types": ["static"] }), Object({ "code": "pt", "iso": "pt-PT", "name": "Portuguese", "dir": "ltr", "files": ["lang/pt-PT.json"], "hashes": ["41407a30"], "types": ["static"] }), Object({ "code": "zh", "iso": "zh-ZH", "name": "Chinese", "dir": "ltr", "files": ["lang/zh-ZH.json"], "hashes": ["11840fa1"], "types": ["static"] }), Object({ "code": "en", "iso": "eng-US", "name": "English", "dir": "ltr", "files": ["lang/en-US.json"], "hashes": ["0025fc0a"], "types": ["static"] })];
   nuxtI18nOptions.defaultLocale = "en";
   nuxtI18nOptions.defaultDirection = "ltr";
   nuxtI18nOptions.routesNameSeparator = "___";
@@ -6584,7 +6584,7 @@ const resolveNuxtI18nOptions = async (context) => {
   return nuxtI18nOptions;
 };
 const nuxtI18nOptionsDefault = Object({ experimental: Object({ "jsTsFormatResource": false }), bundle: Object({ "compositionOnly": true, "runtimeOnly": false, "fullInstall": true, "dropMessageCompiler": false }), compilation: Object({ "jit": true, "strictMessage": true, "escapeHtml": false }), customBlocks: Object({ "defaultSFCLang": "json", "globalSFCScope": false }), vueI18n: "", locales: [], defaultLocale: "", defaultDirection: "ltr", routesNameSeparator: "___", trailingSlash: false, defaultLocaleRouteNameSuffix: "default", strategy: "prefix_except_default", lazy: false, langDir: null, rootRedirect: null, detectBrowserLanguage: Object({ "alwaysRedirect": false, "cookieCrossOrigin": false, "cookieDomain": null, "cookieKey": "i18n_redirected", "cookieSecure": false, "fallbackLocale": "", "redirectOn": "root", "useCookie": true }), differentDomains: false, baseUrl: "", dynamicRouteParams: false, customRoutes: "page", pages: Object({}), skipSettingLocaleOnNavigate: false, types: "composition", debug: false, parallelPlugin: false });
-const nuxtI18nInternalOptions = Object({ __normalizedLocales: [Object({ "code": "ar", "iso": "ar-AR", "name": "Arabic", "dir": "rtl", "files": ["lang/ar-AR.json"], "hashes": ["409de7fe"], "types": ["static"] }), Object({ "code": "de", "iso": "de-DE", "name": "Deutch", "dir": "ltr", "files": ["lang/de-DE.json"], "hashes": ["4b76c809"], "types": ["static"] }), Object({ "code": "id", "iso": "id-ID", "name": "Bahasa Indonesia", "dir": "ltr", "files": ["lang/id-ID.json"], "hashes": ["f67db106"], "types": ["static"] }), Object({ "code": "pt", "iso": "pt-PT", "name": "Portuguese", "dir": "ltr", "files": ["lang/pt-PT.json"], "hashes": ["56164c83"], "types": ["static"] }), Object({ "code": "zh", "iso": "zh-ZH", "name": "Chinese", "dir": "ltr", "files": ["lang/zh-ZH.json"], "hashes": ["e47f3ed2"], "types": ["static"] }), Object({ "code": "en", "iso": "eng-US", "name": "English", "dir": "ltr", "files": ["lang/en-US.json"], "hashes": ["171dc25d"], "types": ["static"] })] });
+const nuxtI18nInternalOptions = Object({ __normalizedLocales: [Object({ "code": "ar", "iso": "ar-AR", "name": "Arabic", "dir": "rtl", "files": ["lang/ar-AR.json"], "hashes": ["37fc0908"], "types": ["static"] }), Object({ "code": "de", "iso": "de-DE", "name": "Deutch", "dir": "ltr", "files": ["lang/de-DE.json"], "hashes": ["78192edd"], "types": ["static"] }), Object({ "code": "id", "iso": "id-ID", "name": "Bahasa Indonesia", "dir": "ltr", "files": ["lang/id-ID.json"], "hashes": ["4fb676f1"], "types": ["static"] }), Object({ "code": "pt", "iso": "pt-PT", "name": "Portuguese", "dir": "ltr", "files": ["lang/pt-PT.json"], "hashes": ["41407a30"], "types": ["static"] }), Object({ "code": "zh", "iso": "zh-ZH", "name": "Chinese", "dir": "ltr", "files": ["lang/zh-ZH.json"], "hashes": ["11840fa1"], "types": ["static"] }), Object({ "code": "en", "iso": "eng-US", "name": "English", "dir": "ltr", "files": ["lang/en-US.json"], "hashes": ["0025fc0a"], "types": ["static"] })] });
 const NUXT_I18N_MODULE_ID = "@nuxtjs/i18n";
 const isSSG = false;
 const parallelPlugin = false;
@@ -34782,13 +34782,13 @@ _sfc_main$9.setup = (props, ctx) => {
 const AppComponent = /* @__PURE__ */ _export_sfc(_sfc_main$9, [["ssrRender", _sfc_ssrRender$8]]);
 const brand = {
   movie: {
-    name: "Chelsey Creative",
-    desc: "Chelsey Creative - Original Casting and Development for Award-Winning Shows",
+    name: "Red Lip Productions",
+    desc: "Red Lip Productions - Original Casting and Development for Award-Winning Shows",
     prefix: " ",
     footerText: "",
     logoText: "",
-    projectName: "Chelsey Creative",
-    url: "chelseycreative.com",
+    projectName: "Red Lip Productions",
+    url: "redlipproductions.com",
     img: "/images/movie-logo.png",
     notifMsg: "Built by Chris David"
   }
@@ -34896,7 +34896,7 @@ function useLocalePath(options) {
     i18n: i18n || getComposer(useNuxtApp().$i18n)
   });
 }
-const _imports_0 = "" + __buildAssetsURL("ChelseyLogo.C2HP5-IS.png");
+const logo = "" + __buildAssetsURL("RedlipLogo.DPWKAD0c.png");
 const link = {
   movie: {
     home: "/",
@@ -35522,7 +35522,7 @@ const _sfc_main$4 = {
   },
   data() {
     return {
-      logo: _imports_0,
+      logo,
       link,
       loaded: false,
       brand,
@@ -35628,7 +35628,7 @@ function _sfc_ssrRender$3(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
         }, {
           default: withCtx((_2, _push3, _parent3, _scopeId2) => {
             if (_push3) {
-              _push3(`<div class="header-content" data-v-e7fffbff${_scopeId2}><nav class="${ssrRenderClass([{ invert: $props.invert }, "nav-logo nav-menu"])}" data-v-e7fffbff${_scopeId2}>`);
+              _push3(`<div class="header-content" data-v-340ae409${_scopeId2}><nav class="${ssrRenderClass([{ invert: $props.invert }, "nav-logo nav-menu"])}" data-v-340ae409${_scopeId2}>`);
               if ($options.isMobile) {
                 _push3(ssrRenderComponent(_component_v_btn, {
                   class: [{ "is-active": $data.openDrawer }, "hamburger hamburger--spin mobile-menu"],
@@ -35638,7 +35638,7 @@ function _sfc_ssrRender$3(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
                 }, {
                   default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                     if (_push4) {
-                      _push4(`<span class="hamburger-box" data-v-e7fffbff${_scopeId3}><span class="bar hamburger-inner" data-v-e7fffbff${_scopeId3}></span></span>`);
+                      _push4(`<span class="hamburger-box" data-v-340ae409${_scopeId3}><span class="bar hamburger-inner" data-v-340ae409${_scopeId3}></span></span>`);
                     } else {
                       return [
                         createVNode("span", { class: "hamburger-box" }, [
@@ -35652,14 +35652,14 @@ function _sfc_ssrRender$3(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
               } else {
                 _push3(`<!---->`);
               }
-              _push3(`<div class="logo" data-v-e7fffbff${_scopeId2}>`);
+              _push3(`<div class="logo" data-v-340ae409${_scopeId2}>`);
               if ($props.invert) {
                 _push3(ssrRenderComponent(_component_nuxt_link, {
                   to: $setup.localePath($data.link.movie.home)
                 }, {
                   default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                     if (_push4) {
-                      _push4(`<img${ssrRenderAttr("src", $data.logo)} alt="logo" data-v-e7fffbff${_scopeId3}>`);
+                      _push4(`<img${ssrRenderAttr("src", $data.logo)} alt="logo" data-v-340ae409${_scopeId3}>`);
                     } else {
                       return [
                         createVNode("img", {
@@ -35675,14 +35675,14 @@ function _sfc_ssrRender$3(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
                 _push3(`<!---->`);
               }
               if (!$props.invert && $data.loaded) {
-                _push3(`<span data-v-e7fffbff${_scopeId2}>`);
+                _push3(`<span data-v-340ae409${_scopeId2}>`);
                 _push3(ssrRenderComponent(_component_nuxt_link, {
                   to: "/",
                   class: "anchor-link scrollactive-item"
                 }, {
                   default: withCtx((_3, _push4, _parent4, _scopeId3) => {
                     if (_push4) {
-                      _push4(`<img${ssrRenderAttr("src", $data.logo)} alt="logo" data-v-e7fffbff${_scopeId3}>`);
+                      _push4(`<img${ssrRenderAttr("src", $data.logo)} alt="logo" data-v-340ae409${_scopeId3}>`);
                     } else {
                       return [
                         createVNode("img", {
@@ -35700,9 +35700,9 @@ function _sfc_ssrRender$3(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
               }
               _push3(`</div>`);
               if ($options.isDesktop) {
-                _push3(`<div data-v-e7fffbff${_scopeId2}><ul class="scrollactive-nav" data-v-e7fffbff${_scopeId2}><!--[-->`);
+                _push3(`<div data-v-340ae409${_scopeId2}><ul class="scrollactive-nav" data-v-340ae409${_scopeId2}><!--[-->`);
                 ssrRenderList($data.menuList, (item, index) => {
-                  _push3(`<li data-v-e7fffbff${_scopeId2}>`);
+                  _push3(`<li data-v-340ae409${_scopeId2}>`);
                   _push3(ssrRenderComponent(_component_v_btn, {
                     text: "",
                     class: "menu-link"
@@ -35731,7 +35731,7 @@ function _sfc_ssrRender$3(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
               } else {
                 _push3(`<!---->`);
               }
-              _push3(`</nav><nav class="${ssrRenderClass([{ invert: $props.invert }, "nav-menu nav-auth"])}" data-v-e7fffbff${_scopeId2}>`);
+              _push3(`</nav><nav class="${ssrRenderClass([{ invert: $props.invert }, "nav-menu nav-auth"])}" data-v-340ae409${_scopeId2}>`);
               _push3(ssrRenderComponent(_component_hidden, { point: "xsDown" }, null, _parent3, _scopeId2));
               _push3(`</nav></div>`);
             } else {
@@ -35911,11 +35911,12 @@ _sfc_main$4.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/Header/Header.vue");
   return _sfc_setup$4 ? _sfc_setup$4(props, ctx) : void 0;
 };
-const MainHeader = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["ssrRender", _sfc_ssrRender$3], ["__scopeId", "data-v-e7fffbff"]]);
+const MainHeader = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["ssrRender", _sfc_ssrRender$3], ["__scopeId", "data-v-340ae409"]]);
+const _imports_0 = "" + __buildAssetsURL("redLipFooter.RfJn3TLU.png");
 const _sfc_main$3 = {};
 function _sfc_ssrRender$2(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
   const _component_nuxt_link = __nuxt_component_0$1;
-  _push(`<div${ssrRenderAttrs(mergeProps({ class: "footer-center" }, _attrs))} data-v-f5d091fb><div class="logo" data-v-f5d091fb><img${ssrRenderAttr("src", _imports_0)} alt="Logo" data-v-f5d091fb></div><div class="menu" data-v-f5d091fb>`);
+  _push(`<div${ssrRenderAttrs(mergeProps({ class: "footer-center" }, _attrs))} data-v-ea198370><div class="logo" data-v-ea198370><img${ssrRenderAttr("src", _imports_0)} alt="Logo" data-v-ea198370></div><div class="menu" data-v-ea198370>`);
   _push(ssrRenderComponent(_component_nuxt_link, { to: "/about" }, {
     default: withCtx((_, _push2, _parent2, _scopeId) => {
       if (_push2) {
@@ -35952,7 +35953,7 @@ function _sfc_ssrRender$2(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
     }),
     _: 1
   }, _parent));
-  _push(`</div><div class="socmed" data-v-f5d091fb><a href="https://www.instagram.com/chelseycreativeinc/" data-v-f5d091fb><span class="ion-logo-instagram icon" data-v-f5d091fb></span></a><a href="https://www.linkedin.com/company/chelsey-creative/" data-v-f5d091fb><span class="ion-logo-linkedin icon" data-v-f5d091fb></span></a></div></div>`);
+  _push(`</div><div class="socmed" data-v-ea198370><a href="https://www.instagram.com/redlipproductions/" data-v-ea198370><span class="ion-logo-instagram icon" data-v-ea198370></span></a><a href="https://www.linkedin.com/company/red-lip-productions/" data-v-ea198370><span class="ion-logo-linkedin icon" data-v-ea198370></span></a></div></div>`);
 }
 const _sfc_setup$3 = _sfc_main$3.setup;
 _sfc_main$3.setup = (props, ctx) => {
@@ -35960,7 +35961,7 @@ _sfc_main$3.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/Footer/Footer.vue");
   return _sfc_setup$3 ? _sfc_setup$3(props, ctx) : void 0;
 };
-const MainFooter = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["ssrRender", _sfc_ssrRender$2], ["__scopeId", "data-v-f5d091fb"]]);
+const MainFooter = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["ssrRender", _sfc_ssrRender$2], ["__scopeId", "data-v-ea198370"]]);
 const _sfc_main$2 = {
   setup() {
     const localePath2 = useLocalePath();

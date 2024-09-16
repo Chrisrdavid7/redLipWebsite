@@ -11,29 +11,30 @@
             <div class="inner-bg">
               <div class="background">
                 <figure>
-                  <img :src="content[Math.abs(currentImg) % content.length].image" alt="promotion">
+                  <img :src="currentSlide.image" alt="promotion">
                 </figure>
               </div>
               <v-row>
                 <v-col sm="7" cols="12" class="pa-0">
                   <div class="text">
-                    <h4>
+                    <h4 :style="{ color: currentSlide.color }">
                       <span class="use-text-subtitle2">
-                        {{ content[Math.abs(currentImg) % content.length].subtitle }}
+                        {{ currentSlide.subtitle }}
                       </span>
-                      {{ content[Math.abs(currentImg) % content.length].title }}
+                      {{ currentSlide.title }}
                     </h4>
-                    <div class="property"> Confidential </div>
-
-                    <article class="desc">
+                    <div class="property" :style="{ color: currentSlide.color }">
+                      Confidential
+                    </div>
+                    <article class="desc" :style="{ color: currentSlide.color }">
                       <h6 class="use-text-paragraph">
-                        {{ content[Math.abs(currentImg) % content.length].desc }}
+                        {{ currentSlide.desc }}
                       </h6>
                     </article>
                     <div class="btn-area">
                       <v-btn 
                         class="custom-button" 
-                        :href="content[Math.abs(currentImg) % content.length].link"
+                        :href="currentSlide.link"
                       >
                         Sign Up Here
                       </v-btn>
@@ -44,7 +45,7 @@
                   <hidden point="xsDown">
                     <div class="image">
                       <figure>
-                        <img :src="content[Math.abs(currentImg) % content.length].image" alt="promotion">
+                        <img :src="currentSlide.image" alt="promotion">
                       </figure>
                     </div>
                   </hidden>
@@ -74,18 +75,19 @@ const sliderData = [
     link: 'https://shorehousecasting.castingcrane.com/age-gate',
     subtitle: 'Now Casting',
     title: 'Shore House',
-    desc:
-      'Chelsey Creative, the talent team behind Summer House, are on the hunt for the next TV sensation at the Jersey Shore!',
+    desc: 'Chelsey Creative, the talent team behind Summer House, are on the hunt for the next TV sensation at the Jersey Shore!',
+    color: '#000000', // Add your desired color here
   },
   {
     image: imgAPI.movie[13],
     link: 'https://chicagofemalemvps.castingcrane.com/',
     subtitle: 'Now Casting',
     title: 'Chicago Females',
-    desc:
-      'The talent team behind Real Housewives of Dubai are looking for Top Socialites in Chicago for our Brand New Show! Sign up or recommend a friend',
+    desc: 'The talent team behind Real Housewives of Dubai are looking for Top Socialites in Chicago for our Brand New Show! Sign up or recommend a friend',
+    color: '#ffffff', // Add a different color here
   },
 ];
+
 
 export default {
   components: {
@@ -99,6 +101,12 @@ export default {
       currentImg: 0,
     };
   },
+  computed: {
+    currentSlide() {
+      const index = Math.abs(this.currentImg) % this.content.length;
+      return this.content[index];
+    },
+  },
   mounted() {
     this.playSlider();
   },
@@ -108,8 +116,7 @@ export default {
   methods: {
     playSlider() {
       this.autoplay = setInterval(() => {
-        this.currentImg += 1;
-        this.transition = 'slide-right';
+        this.next();
       }, 5000); // Set autoplay speed (in ms)
     },
     manualPlay() {

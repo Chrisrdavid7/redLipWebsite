@@ -4311,7 +4311,7 @@ const _routes = [
   {
     name: "index",
     path: "/",
-    component: () => import('./index-thrhzbAL.mjs').then((m) => m.default || m)
+    component: () => import('./index-CkdbOtMg.mjs').then((m) => m.default || m)
   },
   {
     name: "login",

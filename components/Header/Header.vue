@@ -99,7 +99,7 @@
 
 <script>
 import { inject } from 'vue';
-import logo from '@/assets/images/ChelseyLogo.png';
+import logo from '@/assets/images/RedlipLogo.png';
 import link from '@/assets/text/link';
 import brand from '@/assets/text/brand';
 import Hidden from '../Hidden';

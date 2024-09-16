@@ -3,8 +3,8 @@
     <div class="about-us-container">
       <h2>About Us</h2>
       <p>
-        Led by founder and CEO Chelsey Stephens, Chelsey Creative is a dynamic, 
-        full-service content development and casting company based in New York City, 
+        Led by founder and CEO Chelsey Stephens, Red Lip Productions is a dynamic, 
+        full-service content development, casting and televison production company based in New York City, 
         where creativity drives everything we do. With over 15 years of award-winning 
         experience, our core team specializes in content development, creating hit series, 
         and turning real people into superstars. We collaborate with top networks and streaming 

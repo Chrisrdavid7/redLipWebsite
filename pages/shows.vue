@@ -76,7 +76,7 @@ export default defineNuxtComponent({
   },
   head() {
     return {
-      title:'Chelsey Shows',
+      title:'Red Lip',
     };
   },
 });

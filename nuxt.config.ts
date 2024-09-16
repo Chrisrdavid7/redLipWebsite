@@ -9,7 +9,7 @@ export default defineNuxtConfig({
   app: {
     pageTransition: { name: 'page', mode: 'out-in' },
     head: {
-      title: 'Chelsey Creative',
+      title: 'Red Lip Productions',
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -20,12 +20,12 @@ export default defineNuxtConfig({
         { name: 'theme-color', content: theme.primary},
         // Facebook
         { property: 'author', content: 'Chris David' },
-        { property: 'og:site_name', content: 'chelseycreative.com' },
+        { property: 'og:site_name', content: 'redlipproductions.com' },
         { property: 'og:locale', content: 'en_US' },
         { property: 'og:type', content: 'website' },
         // Twitter
-        { property: 'twitter:site', content: 'chelseycreative.com' },
-        { property: 'twitter:domain', content: 'chelseycreative.com' },
+        { property: 'twitter:site', content: 'redlipproductions.com' },
+        { property: 'twitter:domain', content: 'redlipproductions.com' },
         { property: 'twitter:creator', content: 'Chris' },
         { property: 'twitter:card', content: 'summary' },
         { property: 'twitter:image:src', content: '/images/logo.png' },

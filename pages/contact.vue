@@ -66,7 +66,7 @@ export default defineNuxtComponent({
   },
   head() {
     return {
-      title: 'Chelsey Contact',
+      title: 'Red Lip Contact',
     };
   },
 });

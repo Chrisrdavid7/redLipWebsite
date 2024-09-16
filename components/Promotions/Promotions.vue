@@ -75,7 +75,7 @@ const sliderData = [
     link: 'https://shorehousecasting.castingcrane.com/age-gate',
     subtitle: 'Now Casting',
     title: 'Shore House',
-    desc: 'Chelsey Creative, the talent team behind Summer House, are on the hunt for the next TV sensation at the Jersey Shore!',
+    desc: 'Red Lip Productions, the talent team behind Summer House, are on the hunt for the next TV sensation at the Jersey Shore!',
     color: '#000000', // Add your desired color here
   },
   {

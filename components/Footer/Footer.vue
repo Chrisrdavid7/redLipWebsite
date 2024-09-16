@@ -1,7 +1,7 @@
 <template>
   <div class="footer-center">
     <div class="logo">
-      <img src="assets/images/ChelseyLogo.png" alt="Logo" />
+      <img src="assets/images/redLipFooter.png" alt="Logo" />
     </div>
     <div class="menu">
       <nuxt-link to="/about">About Us</nuxt-link>
@@ -11,8 +11,8 @@
     <div class="socmed">
       <!-- <a href="https://www.facebook.com/home.php"><span class="ion-logo-facebook icon"></span></a>
       <a href="https://x.com/home"><span class="ion-logo-twitter icon"></span></a> -->
-      <a href="https://www.instagram.com/chelseycreativeinc/"><span class="ion-logo-instagram icon"></span></a>
-      <a href="https://www.linkedin.com/company/chelsey-creative/"><span class="ion-logo-linkedin icon"></span></a>
+      <a href="https://www.instagram.com/redlipproductions/"><span class="ion-logo-instagram icon"></span></a>
+      <a href="https://www.linkedin.com/company/red-lip-productions/"><span class="ion-logo-linkedin icon"></span></a>
     </div>
   </div>
 </template>

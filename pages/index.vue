@@ -90,7 +90,7 @@ export default defineNuxtComponent({
   },
   head() {
     return {
-      title: 'Chelsey Creative',
+      title: 'Red Lip Productions',
     };
   },
 });

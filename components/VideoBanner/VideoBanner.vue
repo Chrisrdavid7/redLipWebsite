@@ -11,8 +11,8 @@
       ></iframe>
     
       <div class="video-caption">
-        <h1>The Real Housewives of Dubai</h1>
-        <p>Bravo Networks</p>
+        <h1>The Real Housewives of Potomac</h1>
+        <p>October 6th on Bravo Networks</p>
       </div>
     </div>
   </div>
@@ -67,7 +67,7 @@ iframe {
 export default {
   data() {
     return {
-      videoId: 'kDignq3wgJg', // Your YouTube video ID
+      videoId: 'aGN09IlVRxs', // Your YouTube video ID
     };
   }
 };

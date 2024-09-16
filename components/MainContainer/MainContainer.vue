@@ -24,7 +24,7 @@
 }
 
 .container-wrap {
-  margin-top: -40px;
+ 
   :deep(> section) {
     position: relative;
   }

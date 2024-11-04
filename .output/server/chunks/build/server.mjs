@@ -4291,7 +4291,7 @@ const _routes = [
   {
     name: "about",
     path: "/about",
-    component: () => import('./about-BSYTSXhH.mjs').then((m) => m.default || m)
+    component: () => import('./about-C1vfRG_X.mjs').then((m) => m.default || m)
   },
   {
     name: "blank-page",
@@ -4311,7 +4311,7 @@ const _routes = [
   {
     name: "index",
     path: "/",
-    component: () => import('./index-lBaECm5t.mjs').then((m) => m.default || m)
+    component: () => import('./index-B2qGbH06.mjs').then((m) => m.default || m)
   },
   {
     name: "login",

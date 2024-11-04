@@ -12,7 +12,7 @@
     
       <div class="video-caption">
         <h1>The Real Housewives of Potomac</h1>
-        <p>October 6th on Bravo Networks</p>
+        <p>Bravo Networks</p>
       </div>
     </div>
   </div>

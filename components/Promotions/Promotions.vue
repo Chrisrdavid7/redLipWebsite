@@ -71,20 +71,28 @@ import Hidden from '../Hidden';
 
 const sliderData = [
   {
-    image: imgAPI.movie[1],
-    link: 'https://shorehousecasting.castingcrane.com/age-gate',
+    image: imgAPI.movie[24],
+    link: 'https://femalesocialitesdocuseries.castingcrane.com/',
     subtitle: 'Now Casting',
-    title: 'Shore House',
-    desc: 'Red Lip Productions, the talent team behind Summer House, are on the hunt for the next TV sensation at the Jersey Shore!',
+    title: 'Nashville Socialites',
+    desc: 'Red Lip Productions, the talent team behind behind some of your favoite hit shows in on the hunt for the citys top stars for a brand new series on a major cable network!',
     color: '#000000', // Add your desired color here
   },
   {
-    image: imgAPI.movie[13],
-    link: 'https://chicagofemalemvps.castingcrane.com/',
+    image: imgAPI.movie[25],
+    link: 'https://femalesocialitesdocuseries.castingcrane.com/',
     subtitle: 'Now Casting',
-    title: 'Chicago Females',
-    desc: 'The talent team behind Real Housewives of Dubai are looking for Top Socialites in Chicago for our Brand New Show! Sign up or recommend a friend',
-    color: '#ffffff', // Add a different color here
+    title: 'Charlotte Socialites',
+    desc: 'Red Lip Productions, the talent team behind behind some of your favoite hit shows in on the hunt for the citys top stars for a brand new series on a major cable network!',
+    color: '#000000', // Add your desired color here
+  },
+  {
+    image: imgAPI.movie[26],
+    link: 'https://femalesocialitesdocuseries.castingcrane.com/',
+    subtitle: 'Now Casting',
+    title: 'Detroit Finest',
+    desc: 'Red Lip Productions, the talent team behind behind some of your favoite hit shows in on the hunt for the citys top stars for a brand new series on a major cable network!',
+    color: '#000000', // Add your desired color here
   },
 ];
 

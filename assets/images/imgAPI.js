@@ -10,7 +10,7 @@ const imgAPI = {
   ],
   movie: [
     '/images/dubai-logo.png',
-    '/images/shorehouse.jpg',
+    '/images/nashvilleFlyer.jpg',
     '/images/Winterhouse2.jpg',
     '/images/NewJersey.jpg',
     '/images/Karma.jpg',
@@ -33,6 +33,9 @@ const imgAPI = {
     '/images/Newyork.jpg',
     '/images/Newly.jpg',
     '/images/American.jpg',
+    '/images/nashvilleFlyer.jpg',
+    '/images/charlotteFlyer.jpg',
+    '/images/detroitFlyer.jpg',
   ],
 
 };

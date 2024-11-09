@@ -4291,7 +4291,7 @@ const _routes = [
   {
     name: "about",
     path: "/about",
-    component: () => import('./about-C1vfRG_X.mjs').then((m) => m.default || m)
+    component: () => import('./about-BElFoD1e.mjs').then((m) => m.default || m)
   },
   {
     name: "blank-page",
@@ -4306,12 +4306,12 @@ const _routes = [
   {
     name: "detail-movie",
     path: "/detail-movie",
-    component: () => import('./detail-movie-we9Dveh2.mjs').then((m) => m.default || m)
+    component: () => import('./detail-movie-CPJDHxwP.mjs').then((m) => m.default || m)
   },
   {
     name: "index",
     path: "/",
-    component: () => import('./index-B2qGbH06.mjs').then((m) => m.default || m)
+    component: () => import('./index-CL3jbwCi.mjs').then((m) => m.default || m)
   },
   {
     name: "login",
@@ -4331,7 +4331,7 @@ const _routes = [
   {
     name: "shows",
     path: "/shows",
-    component: () => import('./shows-BJGxFcMH.mjs').then((m) => m.default || m)
+    component: () => import('./shows-HhJWmSfn.mjs').then((m) => m.default || m)
   }
 ];
 const _wrapIf = (component, props, slots) => {

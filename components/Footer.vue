@@ -1,7 +1,7 @@
 <template>
   <footer class="footer">
     <div class="logo-container">
-      <img src="/images/1.png" alt="Chelsey Creative Logo" class="footer-logo" />
+      <img src="/images/RedLipFooterLogo.png" alt="Red Lip Logo" class="footer-logo" />
     </div>
     <nav class="footer-nav">
       <ul>

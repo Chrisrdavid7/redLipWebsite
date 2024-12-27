@@ -32,6 +32,9 @@
         "../*",
         "../*"
       ],
+      "nitropack/types": [
+        "../node_modules/nitropack/types"
+      ],
       "nitropack": [
         "../node_modules/nitropack"
       ],
@@ -53,9 +56,6 @@
       "@nuxt/devtools": [
         "../node_modules/@nuxt/devtools"
       ],
-      "vue": [
-        "../node_modules/vue"
-      ],
       "@vue/runtime-core": [
         "../node_modules/@vue/runtime-core"
       ],
@@ -71,9 +71,6 @@
       "nuxt": [
         "../node_modules/nuxt"
       ],
-      "#internal/nuxt/paths": [
-        "../node_modules/nuxt/dist/core/runtime/nitro/paths"
-      ],
       "~": [
         "./.."
       ],
@@ -85,6 +82,9 @@
       ],
       "@@": [
         "./.."
+      ],
+      "#shared": [
+        "../shared"
       ],
       "assets": [
         "../assets"
@@ -98,29 +98,32 @@
       "public/*": [
         "../public/*"
       ],
-      "vue-i18n": [
-        "../node_modules/@nuxtjs/i18n/node_modules/vue-i18n/dist/vue-i18n"
+      "#build": [
+        "./"
       ],
-      "@intlify/shared": [
-        "../node_modules/@intlify/shared/dist/shared"
+      "#build/*": [
+        "./*"
       ],
-      "@intlify/message-compiler": [
-        "../node_modules/@nuxtjs/i18n/node_modules/@intlify/message-compiler/dist/message-compiler"
+      "#internal/nuxt/paths": [
+        "../node_modules/nuxt/dist/core/runtime/nitro/paths"
       ],
-      "@intlify/vue-router-bridge": [
-        "../node_modules/@nuxtjs/i18n/node_modules/vue-i18n-routing/node_modules/@intlify/vue-router-bridge/lib/index"
+      "#sitemap": [
+        "../node_modules/@nuxtjs/sitemap/dist/runtime"
       ],
-      "@intlify/vue-i18n-bridge": [
-        "../node_modules/@nuxtjs/i18n/node_modules/vue-i18n-routing/node_modules/@intlify/vue-i18n-bridge/lib/index"
+      "#sitemap/*": [
+        "../node_modules/@nuxtjs/sitemap/dist/runtime/*"
       ],
-      "vue-i18n-routing": [
-        "../node_modules/@nuxtjs/i18n/node_modules/vue-i18n-routing/dist/vue-i18n-routing"
+      "#site-config": [
+        "../node_modules/nuxt-site-config/dist/runtime"
       ],
-      "#i18n": [
-        "../node_modules/@nuxtjs/i18n/dist/runtime/composables"
+      "#site-config/*": [
+        "../node_modules/nuxt-site-config/dist/runtime/*"
       ],
       "#vue-router": [
         "./vue-router"
+      ],
+      "#internal/nuxt-site-config": [
+        "../node_modules/nuxt-site-config/dist/runtime/server/composable-barrel-deprecated"
       ]
     },
     "lib": [
@@ -131,10 +134,12 @@
   },
   "include": [
     "./types/nitro-nuxt.d.ts",
-    "../node_modules/@nuxtjs/i18n/runtime/server",
-    "../node_modules/vite-plugin-eslint/runtime/server",
+    "../node_modules/nuxt-site-config/dist/module.mjs/runtime/server",
+    "../node_modules/@nuxtjs/sitemap/runtime/server",
     "../node_modules/@nuxt/devtools/runtime/server",
     "../node_modules/@nuxt/telemetry/runtime/server",
+    "./module/nuxt-site-config.d.ts",
+    "./module/@nuxtjs-sitemap.d.ts",
     "./types/nitro.d.ts",
     "../**/*",
     "../server/**/*"
@@ -142,6 +147,7 @@
   "exclude": [
     "../node_modules",
     "../node_modules/nuxt/node_modules",
+    "../node_modules/nuxt-site-config/dist/node_modules",
     "../dist"
   ]
 }

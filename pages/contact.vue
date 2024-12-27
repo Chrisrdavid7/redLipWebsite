@@ -1,73 +1,98 @@
 <template>
-  <div id="contact" class="main-wrap">
-    <main-container nav-scroll>
-      <div class="container-general">
-        <section id="contact-section" class="space-top">
-           <Contact />
-        </section>
-      </div>
-    </main-container>
+  <div class="contact-page">
+    <!-- Navbar -->
+    <Navbar />
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+      <h1 class="hero-title">Contact Us</h1>
+    </div>
+
+    <!-- Content Section -->
+    <div class="content-section">
+      <p>
+        Please note that Red Lip Productions does not accept unsolicited submissions of any kind. Any submissions that are sent will not be reviewed.
+      </p>
+      <h2>Email:</h2>
+      <p class="email">info@redlipproductions.com</p>
+    </div>
   </div>
 </template>
 
+<script setup>
+import Navbar from "@/components/Navbar.vue";
+import { useHead } from "@vueuse/head"; // Ensure proper import
 
+// SEO Metadata
+useHead({
+  title: 'Contact Us - Red Lip Productions',
+  meta: [
+    { name: 'description', content: 'Contact Red Lip Productions to discuss your casting and development needs. We are here to help you bring your ideas to life.' },
+    { name: 'keywords', content: 'Red Lip Productions, contact, casting, NYC, development' },
+    { property: 'og:title', content: 'Contact Us - Red Lip Productions' },
+    { property: 'og:description', content: 'Connect with the Red Lip Productions team to explore opportunities in casting and television development.' },
+    { property: 'og:image', content: '/images/ChelseyLogo.png' }
 
-<style scoped lang="scss">
-@function section-margin($margin) {
-  @return $margin * 20;
-}
-.main-wrap {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  .theme--dark & {
-    background-color: $dark-background-default;
-  }
-  .theme--light & {
-    background-color: $light-background-paper;
-  }
-}
-.space-bottom {
-  margin-bottom: section-margin(6px);
-  @include breakpoints-down(sm) {
-    margin-bottom: section-margin(3px);
-  }
-  @include breakpoints-down(xs) {
-    margin-bottom: section-margin(2px);
-  }
-}
-.space-top {
-  margin-top: section-margin(6px);
-  @include breakpoints-down(sm) {
-    margin-top: section-margin(3px);
-  }
-  @include breakpoints-down(xs) {
-    margin-top: section-margin(2px);
-  }
-}
-.container-wrap {
-  margin-top: -40px;
-  > section {
-    position: relative;
-  }
-}
-</style>
-
-
-<script>
-import MainContainer from '@/components/MainContainer';
-import Contact from '@/components/Contact';
-import { defineNuxtComponent } from '#app';
-
-export default defineNuxtComponent({
-  components: {
-    MainContainer,
-    Contact,
-  },
-  head() {
-    return {
-      title: 'Red Lip Contact',
-    };
-  },
+  ]
 });
 </script>
+
+<style scoped>
+/* General Page Styling */
+.contact-page {
+  font-family: "Avenir Next", sans-serif;
+  color: white;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url('/images/CastPhoto.jpg') center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Hero Section */
+.hero-section {
+  margin-top: -10vh;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: #f39c12; /* Highlighted title color */
+}
+
+/* Content Section */
+.content-section {
+  margin-top: 20px;
+  max-width: 600px;
+  text-align: center;
+  line-height: 1.8;
+}
+
+.content-section p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #ccc;
+}
+
+.content-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.email {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #f39c12; /* Highlight email in orange */
+}
+</style>

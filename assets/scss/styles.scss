@@ -1,40 +1,17 @@
-/*
-** RTL Mixins including margin, pading, position, border and border radius
-** See documentation https://www.npmjs.com/package/rtl-sass
-*/
-@import '@/node_modules/rtl-sass/src/_rtl.scss';
+body {
+  font-family: 'Avenir Next', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+  
 
-/*
-** Color Var
-*/
-@import './color-var';
-
-/*
-** Custom variable
-*/
-@import './variables';
-
-/*
-** Custom mixins
-*/
-@import './mixins';
-
-/*
-** Custom functions
-*/
-@import './functions';
-
-/*
-** Custom media queries
-*/
-@import './media-queries';
-
-/*
-** Commons scss class
-*/
-@import './common';
-
-/*
-** Image API variable
-*/
-@import './url-img';
+  html, body {
+  background-color:#231b1e; /* Ensure text is visible */ /* Set your desired background color */
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  
+  * {
+    box-sizing: border-box;
+  }
+}

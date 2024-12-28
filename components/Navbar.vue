@@ -1,8 +1,8 @@
 <template>
   <header class="navbar">
     <nuxt-link to="/" class="logo">
-      <img src="/images/redLipLogo.png" alt="Red Lip Logo" />
-    
+      <img src="/images/4.png" alt="Red Lip Logo" />
+      
     </nuxt-link>
     <button class="menu-toggle" @click="isMenuOpen = !isMenuOpen">
       <!-- Hamburger Icon -->

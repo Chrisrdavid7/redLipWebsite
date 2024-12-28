@@ -10,7 +10,7 @@ export default defineNuxtConfig({
         { name: 'author', content: 'Chris David' },
         { property: 'og:title', content: 'Red Lip Productions - New York' },
         { property: 'og:description', content: 'Red Lip Productions, Casting, Development, NYC, Reality Television, Chelsey Stephens.' },
-        { property: 'og:image', content: '/images/ChelseyLogo.png' },
+        { property: 'og:image', content: '/images/RedLipLogo.png' },
         { property: 'og:type', content: 'website' }
   
       ],

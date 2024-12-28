@@ -1,5 +1,3 @@
-
-
 export default defineNuxtConfig({
   app: {
     head: {
@@ -19,8 +17,13 @@ export default defineNuxtConfig({
       ]
     }
   },
-  css: ['@/assets/scss/styles.scss'], // Load SCSS styles
-  modules: ['@nuxtjs/sitemap'], // Enable sitemap
+
+  // Load SCSS styles
+  css: ['@/assets/scss/styles.scss'],
+
+  // Enable sitemap
+  modules: ['@nuxtjs/sitemap'],
+
   sitemap: {
     hostname: 'https://redlipproductions.com',
     routes: [
@@ -31,5 +34,7 @@ export default defineNuxtConfig({
       '/contact'
  
     ]
-  }
+  },
+
+  compatibilityDate: '2024-12-27'
 });

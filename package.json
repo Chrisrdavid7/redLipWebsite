@@ -14,7 +14,7 @@
     "@vueuse/head": "^2.0.0",
     "node-vibrant": "^3.1.6",
     "nuxt": "^3.14.1592",
-    "sass": "^1.82.0",
+    "sass": "^1.83.0",
     "vue": "latest",
     "vue-router": "latest",
     "vuetify": "^3.7.5"

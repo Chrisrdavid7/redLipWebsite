@@ -626,7 +626,7 @@ const _inlineRuntimeConfig = {
       }
     ],
     "credits": true,
-    "version": "7.0.0",
+    "version": "7.0.1",
     "sitemaps": {
       "sitemap.xml": {
         "sitemapName": "sitemap.xml",
@@ -1665,7 +1665,7 @@ function preNormalizeEntry(_e, resolvers) {
     } else {
       e.loc = e._relativeLoc;
     }
-  } else {
+  } else if (!isEncoded(e.loc)) {
     e.loc = encodeURI(e.loc);
   }
   if (e.loc === "")
@@ -1673,6 +1673,13 @@ function preNormalizeEntry(_e, resolvers) {
   e.loc = resolve(e.loc, resolvers);
   e._key = `${e._sitemap || ""}${withoutTrailingSlash(e.loc)}`;
   return e;
+}
+function isEncoded(url) {
+  try {
+    return url !== decodeURIComponent(url);
+  } catch {
+    return false;
+  }
 }
 function normaliseEntry(_e, defaults, resolvers) {
   const e = defu(_e, defaults);
@@ -2474,7 +2481,11 @@ const getSSRRenderer = lazyCachedFunction(async () => {
 });
 const getSPARenderer = lazyCachedFunction(async () => {
   const manifest = await getClientManifest();
-  const spaTemplate = await Promise.resolve().then(function () { return _virtual__spaTemplate; }).then((r) => r.template).catch(() => "").then((r) => APP_ROOT_OPEN_TAG + r + APP_ROOT_CLOSE_TAG);
+  const spaTemplate = await Promise.resolve().then(function () { return _virtual__spaTemplate; }).then((r) => r.template).catch(() => "").then((r) => {
+    {
+      return APP_ROOT_OPEN_TAG + r + APP_ROOT_CLOSE_TAG;
+    }
+  });
   const options = {
     manifest,
     renderToString: () => spaTemplate,
@@ -2589,10 +2600,17 @@ const renderer = defineRenderHandler(async (event) => {
   const inlinedStyles = isRenderingIsland ? await renderInlineStyles(ssrContext.modules ?? []) : [];
   const NO_SCRIPTS = routeOptions.experimentalNoScripts;
   const { styles, scripts } = getRequestDependencies(ssrContext, renderer.rendererContext);
+  if (ssrContext._preloadManifest) {
+    head.push({
+      link: [
+        { rel: "preload", as: "fetch", fetchpriority: "low", crossorigin: "anonymous", href: buildAssetsURL(`builds/meta/${ssrContext.runtimeConfig.app.buildId}.json`) }
+      ]
+    }, { ...headEntryOptions, tagPriority: "low" });
+  }
   if (inlinedStyles.length) {
     head.push({ style: inlinedStyles });
   }
-  if (!isRenderingIsland || true) {
+  {
     const link = [];
     for (const resource of Object.values(styles)) {
       if ("inline" in getQuery(resource.file)) {

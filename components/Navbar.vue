@@ -1,7 +1,7 @@
 <template>
   <header class="navbar">
     <nuxt-link to="/" class="logo">
-      <img src="/images/redLipFooter.png" alt="Red Lip Logo" />
+      <img src="/images/RedLipLogo.png" alt="Red Lip Logo" />
     
     </nuxt-link>
     <button class="menu-toggle" @click="isMenuOpen = !isMenuOpen">

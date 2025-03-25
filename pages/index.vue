@@ -12,7 +12,7 @@
           allowfullscreen
         ></iframe>
         <div class="video-caption">
-          <h1>PASS THE BALL RELOADED</h1>
+          <h1>The Real Housewives of Potomac</h1>
           <p>Bravo TV & Streaming on Peacock</p>
         </div>
       </div>
